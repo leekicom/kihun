@@ -13,4 +13,4 @@ st.title(test)
 with open('군사특기.csv',newline='') as f:
     reader = csv.reader(f)
     for row in reader:
-        print(row)
+        st.table(row)
