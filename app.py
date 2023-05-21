@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import csv
-import xlrd
+
 
 
 st.title('나의 점수 미리알아보기')
