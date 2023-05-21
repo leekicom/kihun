@@ -249,3 +249,10 @@ if test1!='' and sum1!=0:
       sum4=15
     sumtotal=sum1+sum2+sum3+sum4
     st.subheader(f"1. :green[{sum1}]점,2. :green[{sum2}]점,3. :green[{sum3}]점,4. :green[{sum4}]점 합계 : :violet[{sumtotal}]점")
+
+    df=pd.read_excel('육군.xlsx','합격점수')
+    int_line=df['군사특기명'].str.contains(test1)
+    df_int=df[int_line]
+    st.dataframe(df_int)
+    chart_data = pd.DataFrame(df_int)
+    st.line_chart(data=chart_data, x='입영월', y='총점', width=0, height=0, use_container_width=True)

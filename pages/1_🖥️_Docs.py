@@ -1,8 +1,15 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(
   page_icon="😆",
   page_title="대구병역진로설계지원센터",
 )
 
-#st.header="도큐먼트"
+df=pd.read_excel('육군.xlsx','합격점수')
+int_line=df['군사특기명'].str.contains('포병레이더')
+df_int=df[int_line]
+st.dataframe(df_int)
+chart_data = pd.DataFrame(df_int)
+st.line_chart(data=chart_data, x='입영월', y='총점', width=0, height=0, use_container_width=True)
+
