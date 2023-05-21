@@ -204,8 +204,10 @@ if test1!='' and sum1!=0:
   if test1!='' and sum1!=0 and sum2!=0 and sum3!=0:
     st.subheader(f"1. :green[{sum1}]점,2. :green[{sum2}]점,3. :green[{sum3}]점")
     st.subheader("4. 가산점/배점 15점(접수마감일 기준)")
-    image = Image.open('5_1.png')
-    image = Image.open('5_2.png')
+    image1 = Image.open('5_1.png')
+    image2 = Image.open('5_2.png')
+    st.image(image1)
+    st.image(image2)   
     options = st.multiselect(
     '가산점이 있으면 추가하세요.',['병역진로설계 지원자','다자녀(3) 가정 자녀','다자녀(2) 가정 자녀','모집특기경력(6월~1년 미만)','모집특기경력(1년~2년 미만)','모집특기경력(2년 이상)',
                         '질병치료에 따른 병역처분변경','국외이주자 중 현역병복무지원자','독립유공자 손·자녀 또는 국가유공자 자녀', '생계급여 수급권자'],['병역진로설계 지원자'])
