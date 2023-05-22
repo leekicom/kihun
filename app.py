@@ -258,4 +258,4 @@ if test1!='' and sum1!=0:
     df_int=df[int_line]
     st.dataframe(df_int)
     chart_data = pd.DataFrame(df_int)
-    st.line_chart(data=chart_data, x='입영월', y='총점', width=0, height=0, use_container_width=True)
+    st.line_chart(data=chart_data, x='입영월', y='총점', width=640, height=0, use_container_width=True)
