@@ -1,5 +1,7 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
+import altair as alt
 
 st.set_page_config(
   page_icon="😆",
@@ -7,10 +9,10 @@ st.set_page_config(
 )
 
 df=pd.read_excel('육군.xlsx','합격점수')
+df1=pd.read_excel('육군.xlsx','Sheet2',index_col='입영월')
 
-# df_int=df[(df['군사특기명']=='수송운용(차량운전)')]
-# st.dataframe(df_int, width=640)
-# st.line_chart(data=pd.DataFrame(df_int), x='입영월', y='총점',columns=['1사단','25사단'], width=0, height=0, use_container_width=True)
+
+st.line_chart(data=pd.DataFrame(df1),  width=0, height=0, use_container_width=True)
 
 #df_int=df[(df['군사특기명'].str.contains('수송운용')) & (df['입영부대']=='1사단')]
 st.text('1사단 : 경기 파주시 문산읍 이천리 516(사임당로 492)')
