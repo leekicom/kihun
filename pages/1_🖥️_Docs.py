@@ -8,9 +8,9 @@ st.set_page_config(
 
 df=pd.read_excel('육군.xlsx','합격점수')
 
-df_int=df[(df['군사특기명']=='수송운용(차량운전)')]
-st.dataframe(df_int, width=640)
-st.line_chart(data=pd.DataFrame(df_int), x='입영월', y='총점',columns=['1사단','25사단'], width=0, height=0, use_container_width=True)
+# df_int=df[(df['군사특기명']=='수송운용(차량운전)')]
+# st.dataframe(df_int, width=640)
+# st.line_chart(data=pd.DataFrame(df_int), x='입영월', y='총점',columns=['1사단','25사단'], width=0, height=0, use_container_width=True)
 
 #df_int=df[(df['군사특기명'].str.contains('수송운용')) & (df['입영부대']=='1사단')]
 df_int=df[(df['군사특기명']=='수송운용(차량운전)') & (df['입영부대']=='1사단')]
