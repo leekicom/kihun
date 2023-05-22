@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 df=pd.read_excel('육군.xlsx','합격점수')
-int_line=df['군사특기명'].str.contains('수송운용') and df['입영부대'].str.contains('1사단')
+int_line=df['군사특기명','입영부대'].str.contains('수송운용','1사단')
 df_int=df[int_line]
 st.dataframe(df_int)
 chart_data = pd.DataFrame(df_int)
