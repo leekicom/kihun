@@ -23,6 +23,7 @@ def create_connection(db_file):
 
 def run_query():
     query = "select 입영월,접수인원,지원인원 from gunsa1 where 군사특기명='장갑차조종'"
+    query1 = "select 입영월,지원인원 from gunsa1 where 군사특기명='장갑차조종'"
     conn = create_connection("mydatabase.db")
 
 
@@ -33,17 +34,18 @@ def run_query():
                 columns = cols
             )
    #results_df.drop(results_df.columns[-1],axis=1,inplace=True)
-    results_df.set_index(['입영월'],inplace=True)
+  #  results_df.set_index(['입영월'],inplace=True)
     st.dataframe(results_df)
-    st.line_chart(data=pd.DataFrame(results_df),  width=0, height=0, use_container_width=True)
+   # st.line_chart(data=pd.DataFrame(results_df),  width=0, height=0, use_container_width=True)
     #   Create a chart with annotations
- 
- 
+    restult1=results_df.melt('입영월', var_name='company', value_name='price')
+    st.dataframe(restult1)
 
-    c = alt.Chart(pd.DataFrame(results_df)).mark_line(point=True).encode(
-        alt.Y('지원인원:Q'),
-        x='입영월:T',
-        color='접수인원:N'
-    )
-    st.altair_chart(c)
+    c = alt.Chart(pd.DataFrame(restult1)).mark_line(point=True).encode(
+        alt.Y('price:Q'),
+        x='입영월:N',
+        color='company:N'
+    ).interactive()
+    st.altair_chart(c.interactive(),
+    use_container_width=True)
 run_query()
