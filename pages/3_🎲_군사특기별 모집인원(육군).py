@@ -37,7 +37,7 @@ def gunsa_query():
             ) 
     col1, col2 = st.columns(2) 
     with col1:
-        test1=st.selectbox('군사특기를 선택하세요',(results_df))
+        test1=st.selectbox('군사특기를 선택하세요',results_df)
     with col2:
         test2=st.selectbox('입영부대를 선택하세요',(results_df1))
 
