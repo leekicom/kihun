@@ -283,7 +283,7 @@ elif test1!='수송운용(차량운전)' and test1!='':
           sumtotal=sum1+sum2+sum3+sum4
           st.subheader(f"1. :green[{sum1}]점,2. :green[{sum2}]점,3. :green[{sum3}]점,4. :green[{sum4}]점 합계 : :violet[{sumtotal}]점")
           st.subheader(test1)
-          if st.button('군사특기임무 및 설명'):
-            webbrowser.open('https://mma.go.kr/conscription/recruit_service/procedure/army/S_board_text.do?mc=mma0000388&gun_gbcd=1&mojip_gbcd=1')
+          mod1_html=mod1.html6
+          st.markdown(mod1_html, unsafe_allow_html=True)
           run_query(test1)
    

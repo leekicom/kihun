@@ -320,3 +320,4 @@ html5="""<ul class="list">
 	</li>
 	<li>질병치료에 따른 병역처분변경으로 현역병입영대상 판정자 : 4점</li>
 </ul>"""
+html6="""<a href="https://mma.go.kr/conscription/recruit_service/procedure/army/S_board_text.do?mc=mma0000388&gun_gbcd=1&mojip_gbcd=1" target="_blank">군사특기임무 및 설명</a>"""
