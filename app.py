@@ -3,6 +3,8 @@ import pandas as pd
 from PIL import Image
 import sqlite3
 import altair as alt
+import webbrowser
+import mod1
 
 st.set_page_config(
   page_icon="😆",
@@ -169,11 +171,12 @@ if test1=='수송운용(차량운전)':
 
 elif test1!='수송운용(차량운전)' and test1!='':
   st.markdown(f":blue[{test1}]")
-  df = pd.DataFrame(columns1, index=index)
-  st.table(df)
+  mod1_html=mod1.html1
+  st.markdown(mod1_html, unsafe_allow_html=True)
 
   st.markdown("1.기술자격·면허증/배점 50점")
-  image1=st.image(Image.open('1.png'))
+  mod1_html=mod1.html2
+  image1=st.markdown(mod1_html, unsafe_allow_html=True)
 
   col1, col2 = st.columns(2)
   with col1:
@@ -198,7 +201,9 @@ elif test1!='수송운용(차량운전)' and test1!='':
     image1.empty()
     sum1_a=st.markdown(f"1. :green[{sum1}]점")
     st.markdown("2. 전공학과/배점 40점")
-    image2=st.image(Image.open('2.png'))
+    mod1_html=mod1.html3
+    image2=st.markdown(mod1_html, unsafe_allow_html=True)
+
     col1, col2 = st.columns(2)
     with col1:
       hak1 = st.radio("학력구분을 선택하세요.",('대학교', '전문대','고졸','기타'))
@@ -217,7 +222,8 @@ elif test1!='수송운용(차량운전)' and test1!='':
       sum1_a.empty()
       sum2_a=st.markdown(f"1. :green[{sum1}]점,2. :green[{sum2}]점")
       st.markdown("3. 출결상황/배점 10점")
-      image3=st.image(Image.open('3.png'))
+      mod1_html=mod1.html4
+      image3=st.markdown(mod1_html, unsafe_allow_html=True)
 
       query = conn.execute("select 자격증구분 from 점수계산 where 구분='결석일'")
       cols = [column[0] for column in query.description]
@@ -232,9 +238,8 @@ elif test1!='수송운용(차량운전)' and test1!='':
         sum2_a.empty()
         sum3_a=st.markdown(f"1. :green[{sum1}]점,2. :green[{sum2}]점,3. :green[{sum3}]점")
         st.markdown("4. 가산점/배점 15점(접수마감일 기준)")
-        image4=st.image(Image.open('5_1.png'))
-        image5=st.image(Image.open('5_2.png'))
-
+        mod1_html=mod1.html5
+        image4=st.markdown(mod1_html, unsafe_allow_html=True)
 
         options = st.multiselect(
         '가산점이 있으면 추가하세요.',['병역진로설계 지원자','다자녀(3) 가정 자녀','다자녀(2) 가정 자녀','모집특기경력(6월~1년 미만)','모집특기경력(1년~2년 미만)','모집특기경력(2년 이상)',
@@ -274,10 +279,11 @@ elif test1!='수송운용(차량운전)' and test1!='':
 
         if test1!='' and sum1!=0 and sum2!=0 and sum3!=0 and sum4>1:
           image4.empty()
-          image5.empty()
           sum3_a.empty()
           sumtotal=sum1+sum2+sum3+sum4
           st.subheader(f"1. :green[{sum1}]점,2. :green[{sum2}]점,3. :green[{sum3}]점,4. :green[{sum4}]점 합계 : :violet[{sumtotal}]점")
           st.subheader(test1)
+          if st.button('군사특기임무 및 설명'):
+            webbrowser.open('https://mma.go.kr/conscription/recruit_service/procedure/army/S_board_text.do?mc=mma0000388&gun_gbcd=1&mojip_gbcd=1')
           run_query(test1)
    
