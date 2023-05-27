@@ -106,7 +106,9 @@ if test1=='수송운용(차량운전)':
   if test1!='' and sum1!=0 :
     sum2_a=st.markdown(f"1. :green[{sum1}]점")
     st.markdown("2. 출결상황/배점 10점")
-    image3=st.image(Image.open('3.png'))
+    mod1_html=mod1.html4
+    image3=st.markdown(mod1_html, unsafe_allow_html=True)
+    
     conn = create_connection("mydatabase.db")
     query = conn.execute("select 자격증구분 from 점수계산 where 구분='결석일'")
     cols = [column[0] for column in query.description]
@@ -121,8 +123,8 @@ if test1=='수송운용(차량운전)':
       sum2_a.empty()
       sum3_a=st.markdown(f"1. :green[{sum1}]점,2. :green[{sum3}]점")
       st.markdown("3. 가산점/배점 15점(접수마감일 기준)")
-      image4=st.image(Image.open('5_1.png'))
-      image5=st.image(Image.open('5_2.png'))
+      mod1_html=mod1.html5
+      image4=st.markdown(mod1_html, unsafe_allow_html=True)
 
 
       options = st.multiselect(
@@ -161,7 +163,6 @@ if test1=='수송운용(차량운전)':
           sum4=15
       if test1!='' and sum1!=0 and sum3!=0 and sum4>1:
         image4.empty()
-        image5.empty()
         sum3_a.empty()
         sumtotal=sum1+sum2+sum3+sum4
         st.subheader(f"1. :green[{sum1}]점,2. :green[{sum3}]점,3. :green[{sum4}]점 합계 : :violet[{sumtotal}]점")
