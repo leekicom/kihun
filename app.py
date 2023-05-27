@@ -89,7 +89,7 @@ def run_query(a1):
 
 
 
-if test1=='수송운용(차량운전)':
+if test1 in ('수송운용(차량운전)', '견인차량운전', '경장갑차운전', 'K-53계열차량운전', '구난차량운전', '크레인차량운전'):
   st.markdown(f":blue[{test1}]")
   df = pd.DataFrame(columns2, index=index)
   st.table(df)
@@ -170,7 +170,7 @@ if test1=='수송운용(차량운전)':
         run_query(test1)
    
 
-elif test1!='수송운용(차량운전)' and test1!='':
+elif test1!='':
   st.markdown(f":blue[{test1}]")
   mod1_html=mod1.html1
   st.markdown(mod1_html, unsafe_allow_html=True)
