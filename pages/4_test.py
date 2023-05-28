@@ -4,7 +4,7 @@ import os
 import re
 import webbrowser
 import mod2
-
+from PIL import Image
 moon=open('speech_moon.txt',encoding='UTF-8').read()
 moon=re.sub('[^가-힣]',' ',moon)
 
@@ -15,7 +15,9 @@ if st.button('Say hello'):
     webbrowser.open('http://www.naver.com')
 else:
     st.write('Goodbye')
-mod2_html=mod2.K계열전차승무
+image = Image.open('image/K계열전차승무.jpeg')
+st.image(image, caption='K계열전차승무')
+mod2_html=mod2.k121101
 st.markdown(mod2_html, unsafe_allow_html=True)
 # dic_word=df_word.set_index('word').to_dict()['n']
 # dic_word

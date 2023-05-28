@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import os
-
+import mod2
 
 def create_connection(db_file):
     conn = None
@@ -12,7 +12,26 @@ def create_connection(db_file):
     except Exception as e:
         st.write(e)
     return conn
-
+def code_query(a):
+    query = "select 코드 from 군사특기코드 where 군사특기명='"+a+"'"
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df
+def sogae_query(b):
+    query = "select Column2 from 군사특기소개 where Column1='"+b+"'"
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df    
 def gun_query():
     query = "select * from 군사특기별현황"
     conn = create_connection("mydatabase.db")
@@ -23,6 +42,7 @@ def gun_query():
                 columns = cols
             )  
     return results_df
+
 df1=gun_query()
 
 col1, col2 = st.columns(2) 
@@ -43,3 +63,11 @@ c = alt.Chart(pd.DataFrame(restult2)).mark_line(point=True).encode(
     ).interactive()
 st.altair_chart(c.interactive(),
     use_container_width=True)
+code1_txt=0
+code1=code_query(test1)
+code1_txt=code1['코드'].values
+txt2=''.join(code1_txt)
+
+code1_txt1=sogae_query(txt2)
+mod2_html=''.join(code1_txt1['Column2'].values)
+st.markdown(mod2_html, unsafe_allow_html=True)
