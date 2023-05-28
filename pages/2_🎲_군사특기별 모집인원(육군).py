@@ -4,6 +4,7 @@ import pandas as pd
 import altair as alt
 import os
 import mod2
+from PIL import Image
 
 def create_connection(db_file):
     conn = None
@@ -70,4 +71,9 @@ txt2=''.join(code1_txt)
 
 code1_txt1=sogae_query(txt2)
 mod2_html=''.join(code1_txt1['Column2'].values)
+try:
+    image = Image.open('image/'+txt2+'.jpeg')
+except: 
+    image = Image.open('image/'+txt2+'.bmp')    
+st.image(image, caption=txt2)
 st.markdown(mod2_html, unsafe_allow_html=True)
