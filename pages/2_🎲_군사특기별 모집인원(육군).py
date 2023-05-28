@@ -6,6 +6,11 @@ import os
 import mod2
 from PIL import Image
 
+st.set_page_config(
+  page_icon="😆",
+  page_title="대구병역진로설계지원센터",
+)
+
 def create_connection(db_file):
     conn = None
     try:
