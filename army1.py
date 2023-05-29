@@ -109,7 +109,8 @@ def run_query(a1):
             )
     restult1=results_df.melt('입영월', var_name='구분', value_name='인원/점수')
     results_df.set_index(['입영월'],inplace=True)
-    results_df.T
+    rst=results_df.transpose()
+    st.dataframe(rst)
     c = alt.Chart(pd.DataFrame(restult1)).mark_line(point=True).encode(
         alt.Y('인원/점수:Q'),
         x='입영월:N',
