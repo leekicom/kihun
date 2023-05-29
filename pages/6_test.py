@@ -5,11 +5,7 @@ import re
 import webbrowser
 import mod2
 from PIL import Image
-moon=open('speech_moon.txt',encoding='UTF-8').read()
-moon=re.sub('[^가-힣]',' ',moon)
 
-
-font='DoHyeon-Regular.ttf'
 if st.button('Say hello'):
     st.write('Why hello there')
     webbrowser.open('http://www.naver.com')
