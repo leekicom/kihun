@@ -391,7 +391,8 @@ def army_hh():
     restult1=df2[['입영월','접수인원','지원인원','커트라인']]
     restult2=restult1.melt('입영월', var_name='구분', value_name='인원/점수')
     restult1.set_index(['입영월'],inplace=True)
-    restult1.T
+    rst1=restult1.transpose()
+    st.dataframe(rst1)
 
     c = alt.Chart(pd.DataFrame(restult2)).mark_line(point=True).encode(
         alt.Y('인원/점수:Q'),

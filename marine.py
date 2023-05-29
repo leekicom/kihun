@@ -32,7 +32,8 @@ def marine_hh():
     restult1=df2[['입영월','1차','최종']]
     restult2=restult1.melt('입영월', var_name='구분', value_name='점수')
     restult1.set_index(['입영월'],inplace=True)
-    restult1.T
+    rst1=restult1.transpose()
+    st.dataframe(rst1)
     c = alt.Chart(pd.DataFrame(restult2)).mark_line(point=True).encode(
         alt.Y('점수:Q'),
         x='입영월:N',

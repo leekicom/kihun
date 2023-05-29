@@ -42,17 +42,19 @@ def air_force_hh():
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
 
     df3=code_df.query("소분류=='"+test1+"'")
+
     result3=df3['대분류'].values
     result4=df3['코드'].values
     txt3=''.join(result3)
     txt4=''.join(result4)
     st.text("대분류:"+txt3)
     df2=df1.query("특기=='"+txt3+"'")
+
     restult1=df2[['입영월','커트라인','선발인원']]
     restult2=restult1.melt('입영월', var_name='구분', value_name='인원/점수')
     restult1.set_index(['입영월'],inplace=True)
-    restult1.T
-
+    rst1=restult1.transpose()
+    st.dataframe(rst1)
     c = alt.Chart(pd.DataFrame(restult2)).mark_line(point=True).encode(
         alt.Y('인원/점수:Q'),
         x='입영월:N',
