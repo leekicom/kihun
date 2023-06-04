@@ -514,3 +514,581 @@ html10="""<div class="layout_h3">
 	</li>
 </ul>
 </div>"""
+html11="""<div class="layout_h4">
+<h7>전문기술병(화생방, 의무, 기계, 공병, 통신전자전기, 차량정비, 차량운전, 전자계산)</h7>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="4" scope="col">서류전형(1차)</th>
+			<th rowspan="2" scope="col">면접<br>
+			(2차)</th>
+			<th rowspan="2" scope="col">계</th>
+		</tr>
+		<tr>
+			<th scope="col">자격/면허</th>
+			<th scope="col">전공</th>
+			<th scope="col">출결</th>
+			<th scope="col">가산점</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td>50</td>
+			<td>40</td>
+			<td>10</td>
+			<td>15</td>
+			<td>25</td>
+			<td>140</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html12="""<div class="layout_h4">
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="row">구분</th>
+			<th colspan="3" scope="col">국가기술자격증</th>
+			<th colspan="3" scope="col">일학습병행자격증</th>
+			<th colspan="2" scope="col">일반자격증</th>
+			<th colspan="3" scope="col"><span style="color: rgb(0, 0, 205);">운전면허증<br>
+			(수송계열에 한함)</span></th>
+			<th rowspan="2" scope="col">미소지</th>
+		</tr>
+		<tr>
+			<th scope="col">기사 이상</th>
+			<th scope="col">산업기사</th>
+			<th scope="col">기능사</th>
+			<th scope="col">L6, L5</th>
+			<th scope="col">L4, L3</th>
+			<th scope="col">L2</th>
+			<th scope="col">공인</th>
+			<th scope="col">비공인</th>
+			<th scope="col">대형/특수</th>
+			<th scope="col">1종보통</th>
+			<th scope="col">&nbsp; 2종보통(수동)&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">배점</th>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">45</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">45</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">26</td>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">45</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">20</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>"""
+html13="""<div class="layout_h4">
+<table class="table_col">
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+			<th rowspan="3" scope="col">비전공/<br>
+			고퇴이하</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+			<th colspan="2" scope="col">2년</th>
+			<th colspan="2" scope="col">1년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2" scope="row">대학교</th>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">38</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">26</td>
+			<td rowspan="5" style="text-align: center;">20</td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">전문대</th>
+			<th scope="row">3년제</th>
+			<td></td>
+			<td></td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">38</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">28</td>
+		</tr>
+		<tr>
+			<th scope="row">2년제</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">34</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">28</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">고졸</th>
+			<td colspan="8" style="text-align: center;">전공 34점, 비전공 20점</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">직업전문학교/<br>
+			인력개발원</th>
+			<td colspan="8">2년 수료 : 32점 / 1년 수료 ~ 2년 : 30점 / 6개월 ~ 1년 : 26점</td>
+		</tr>
+	</tbody>
+</table>
+
+<div><span style="font-size: 14px;">* 고교, 대학 등에서 관련학과를 모두 전공한 경우 배점을 비교하여 높은 점수 부여<br>
+* <strong><span style="color: rgb(0, 0, 205);">차량운전 직종은 전공배점 적용 안함 (지원자 전원 20점 부여)</span></strong><br>
+*&nbsp;한국폴리텍대학 :&nbsp;고용노동부 산하 / 인력개발원 : 대한상공회의소 산하</span>
+
+<table class="table_col">
+	<caption>학점은행제에 대한 표이며 학력인정기준학점, 배점(학사, 전문학사3년, 전문학사2년), 비고(대학학년)에 대한내용을 제공</caption>
+	<tbody>
+		<tr>
+			<td rowspan="6" style="text-align: center;">학점은행제<br>
+			*19년 1월 이후<br>
+			접수자 부터 적용</td>
+			<td colspan="1" rowspan="2" style="text-align: center;">학력인정<br>
+			기준학점</td>
+			<td colspan="3" rowspan="1" style="text-align: center;">배점</td>
+			<td colspan="1" rowspan="2" style="text-align: center;">비고<br>
+			(대학학년)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">학사</td>
+			<td style="text-align: center;">전문학사<br>
+			(3년)</td>
+			<td style="text-align: center;">전문학사<br>
+			(2년)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">40학점 이상</td>
+			<td style="text-align: center;">28</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">1학년</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">80학점 이상</td>
+			<td style="text-align: center;">32</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">2학년</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">120학점 이상</td>
+			<td style="text-align: center;">36</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;"></td>
+			<td style="text-align: center;">3학년</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">140학점 이상</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;"></td>
+			<td style="text-align: center;"></td>
+			<td style="text-align: center;">4학년</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</div>"""
+html14="""<div class="layout_h4">
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="5" scope="col">결석일자</th>
+			<th rowspan="2" scope="col">비고</th>
+		</tr>
+		<tr>
+			<th scope="col">0일</th>
+			<th scope="col">1~2일</th>
+			<th scope="col">3~4일</th>
+			<th scope="col">5~6일</th>
+			<th scope="col">7일 이상</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td>10</td>
+			<td>9</td>
+			<td>8</td>
+			<td>7</td>
+			<td>6</td>
+			<td>고교3년간 누계적용</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html15="""<div class="layout_h5">
+<h6>&nbsp;일반기술병(일반계열)</h6>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="3" scope="col">서류전형</th>
+			<th rowspan="2" scope="col">면접</th>
+			<th rowspan="2" scope="col">계</th>
+		</tr>
+		<tr>
+			<th scope="col">자격/면허</th>
+			<th scope="col">출결</th>
+			<th scope="col">가산점</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td style="text-align: center;">70</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">110</td>
+			<td style="text-align: center;">215</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html16="""<div class="layout_h5">
+<h6>&nbsp;전문기술병(전산, 조리, 항공, 전자, 통신, 기관, 화학, 전기, 건축/토목 등)</h6>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="4" scope="col">서류전형</th>
+			<th rowspan="2" scope="col">면접</th>
+			<th rowspan="2" scope="col">계</th>
+		</tr>
+		<tr>
+			<th scope="col">자격/면허</th>
+			<th scope="col">전공</th>
+			<th scope="col">출결</th>
+			<th scope="col">가산점</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">10</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">100</td>
+			<td style="text-align: center;">215</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html17="""<div class="layout_h3">
+<h6>관련분야 직업경력자(전문기술 계열)</h6>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th scope="row">2년 이상</th>
+			<th scope="col">1년~2년 미만</th>
+			<th scope="col">6개월~1년 미만</th>
+			<th scope="col">6개월 미만</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">5점</th>
+			<td style="text-align: center;">4점</td>
+			<td style="text-align: center;">3점</td>
+			<td style="text-align: center;">2점</td>
+		</tr>
+	</tbody>
+</table>
+<h6>컴퓨터속기 또는 한글속기 경력(전산계열 지원자에 한함)</h6>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th scope="row">3년 이상</th>
+			<th scope="col">1년 이상</th>
+			<th scope="col">6월 이상</th>
+			<th scope="col">속기 20편 이상</th>
+			<th scope="col">속기 20편 미만</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">5점</th>
+			<td style="text-align: center;"><strong>4점</strong></td>
+			<td style="text-align: center;"><strong>3점</strong></td>
+			<td style="text-align: center;"><strong>2점</strong></td>
+			<td style="text-align: center;"><strong>1점</strong></td>
+		</tr>
+	</tbody>
+</table>
+<h6>독립유공자 (손)자녀, 국가 유공자&nbsp;자녀&nbsp;가산점 : 4점</h6>
+<h6>질병치유 자원병역이행자 가산점 : 4점</h6>
+<h6>국외이주자 중 현역복무지원자 가산점 : 4점</h6>
+<h6>다자녀(3명 이상) 가정자녀&nbsp;가산점 : 4점 / 다자녀(2명) 가정자녀&nbsp;가산점 : 2점 (2021년 9월 입영자부터)</h6>
+<h6>국민기초생활보장법 제7조제1항제1호에 따른 생계급여 수급권자 : 4점</h6>
+<h6>수영관련 자격증(전 계열) : 2.5~5점<br>
+잠수기능사&nbsp;5점 /&nbsp;수상안전 강사 5점 /&nbsp;인명구조 2.5점 /&nbsp;잠수자격 2.5점</h6>
+<h6>건설기계(중장비) 운전 자격증(수송 계열) : 2.5점<br>
+</div>"""
+html18="""<div class="layout_h4">
+<h6>&nbsp;일반기술병(일반, 수색)</h6>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="3" scope="col">1차</th>
+			<th colspan="2" scope="col">2차</th>
+			<th rowspan="2" scope="col">계<br>
+			(1차+2차)</th>
+		</tr>
+		<tr>
+			<th scope="col">자격/면허</th>
+			<th scope="col">출결</th>
+			<th scope="col">가산점</th>
+			<th scope="col">면접</th>
+			<th scope="col">체력검사</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td style="text-align: center;">70</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">15</td>
+			<td style="text-align: center;">80</td>
+			<td style="text-align: center;">70</td>
+			<td style="text-align: center;">255</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html19="""<div class="layout_h4">
+<h6>&nbsp;전문기술병(화학, 공병, 무기정비, 수송)</h6>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">구분</th>
+			<th colspan="4" scope="col">1차</th>
+			<th colspan="2" scope="col">2차</th>
+			<th rowspan="2" scope="col">계<br>
+			(1차+2차)</th>
+		</tr>
+		<tr>
+			<th scope="col">자격/면허</th>
+			<th scope="col">전공</th>
+			<th scope="col">출결</th>
+			<th scope="col">가산점</th>
+			<th scope="col">면접</th>
+			<th scope="col">체력검사</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th scope="row">배점</th>
+			<td style="text-align: center;">50</td>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">10</td>
+			<td>15</td>
+			<td>70</td>
+			<td>70</td>
+			<td>255</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+"""
+html20="""<div class="layout_h3">
+<h3>체력검사&nbsp;: 배점 70점</h3>
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="col">평가요소</th>
+			<th colspan="2" scope="col">팔굽혀펴기</th>
+			<th colspan="2" scope="col">윗몸일으키기</th>
+		</tr>
+		<tr>
+			<th scope="col">횟수(1분)</th>
+			<th scope="col">점수</th>
+			<th scope="col">횟수(1분)</th>
+			<th scope="col">점수</th>
+		</tr>
+	</thead>
+	<tbody class="text_center">
+		<tr>
+			<th rowspan="20" scope="row">등급/배점</th>
+			<td>52회이상</td>
+			<td>35</td>
+			<td>58회이상</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td>50~51</td>
+			<td>34</td>
+			<td>56~57</td>
+			<td>34</td>
+		</tr>
+		<tr>
+			<td>48~49</td>
+			<td>33</td>
+			<td>54~55</td>
+			<td>33</td>
+		</tr>
+		<tr>
+			<td>46~47</td>
+			<td>32</td>
+			<td>52~53</td>
+			<td>32</td>
+		</tr>
+		<tr>
+			<td>44~45</td>
+			<td>31</td>
+			<td>50~51</td>
+			<td>31</td>
+		</tr>
+		<tr>
+			<td>42~43</td>
+			<td>30</td>
+			<td>48~49</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<td>40~41</td>
+			<td>29</td>
+			<td>46~47</td>
+			<td>29</td>
+		</tr>
+		<tr>
+			<td>38~39</td>
+			<td>28</td>
+			<td>44~45</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td>36~37</td>
+			<td>27</td>
+			<td>42~43</td>
+			<td>27</td>
+		</tr>
+		<tr>
+			<td>34~35</td>
+			<td>26</td>
+			<td>40~41</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<td>32~33</td>
+			<td>25</td>
+			<td>38~39</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>30~31</td>
+			<td>24</td>
+			<td>36~37</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<td>28~29</td>
+			<td>23</td>
+			<td>34~35</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>26~27</td>
+			<td>22</td>
+			<td>32~33</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>24~25</td>
+			<td>21</td>
+			<td>30~31</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>22~23</td>
+			<td>20</td>
+			<td>28~29</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>20~21</td>
+			<td>19</td>
+			<td>26~27</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td>18~19</td>
+			<td>18</td>
+			<td>24~25</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>16~17</td>
+			<td>17</td>
+			<td>22~23</td>
+			<td>17</td>
+		</tr>
+		<tr>
+			<td>15회이하</td>
+			<td>16</td>
+			<td>21회이하</td>
+			<td>16</td>
+		</tr>
+		<tr>
+			<th scope="row">비고</th>
+			<td colspan="4">* 전자측정 장비에 의하여 체력검사 실시(팔굽혀펴기 1분, 윗몸일으키기 1분)</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html21="""<div class="layout_h3">
+&nbsp;<span style="font-size: 14px;"><strong><span style="color: rgb(0, 0, 255);">&lt;공통가산점&gt; - 전계열</span></strong><br>
+&nbsp;&nbsp; - 질병치유 자진입대 : 4점<br>
+&nbsp;&nbsp; - 독립유공자 (손)자녀, 국가유공자 자녀 &nbsp;: 4점<br>
+&nbsp;&nbsp; - 국외이주자 중 현역복무지원자 가산점 : 4점<br>
+&nbsp;&nbsp; - 다자녀(3명 이상) 가정자녀&nbsp;가산점 : 4점 / 다자녀(2명) 가정자녀&nbsp;가산점 : 2점 <br>
+&nbsp;&nbsp; -&nbsp;국민기초생활보장법 제7조제1항제1호에 따른 생계급여 수급권자 : 4점<br>
+&nbsp;<strong><span style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">&lt;기타 가산점&gt; - 수색 계열 제외</span></span></strong><br>
+<span style="font-size: 14px;">&nbsp;&nbsp; - 무도 유단자 : 3단 이상 5점/ 1~2단 2점</span><br>
+<span style="font-size: 14px;">&nbsp;&nbsp; -&nbsp;수상인명구조 자격증 소지자 : 2점<br>
+&nbsp;&nbsp; - 공인회계사 자격증 소지자 : 10점</span>
+
+<div>&lt;기타 가산점&gt; - 수색계열<br>
+&nbsp;&nbsp; - 스키강사 자격증 소지자 : 10점<br>
+&nbsp;&nbsp; - 스킨스쿠버 자격증 소지자 : 10점<br>
+&nbsp;&nbsp; - 수영강사 자격증 소지자 : 10점<br>
+&nbsp;&nbsp; - 무도유단자 : 3단이상 5점/ 1~2단 2점<br>
+&nbsp;&nbsp; - 수상인명구조 자격증 소지자 : 5점</span><br>
+&nbsp;병역진로설계 군 추천특기 지원자 가산점 : 1점</strong><br>
+</div>"""
