@@ -42,6 +42,17 @@ def gunsa1_query():
             )  
     tes=st.selectbox('군사특기를 선택하세요',results_df)
     return tes
+def gstg1(txt,txt1,txt2):
+    query = "select distinct c.군사특기명 from "+txt+" a,직간접 b,군사특기코드 c where a.군구분='육군' and a.검사구분코드=b.관련분야코드 and b.군사특기=c.코드 and b.직간접구분='"+txt1+"' and a.검사지침코드명='"+txt2+"'"
+    conn = create_connection("mydatabase.db")
+
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df
 def gunsa2_query():
     query = "select 입영월,입영부대,접수인원,지원인원,커트라인 from 군사특기별현황 where 군사특기명='수송운용(차량운전)' and 입영월<>'2023년9월'"
     conn = create_connection("mydatabase.db")
@@ -96,6 +107,16 @@ def gun_query():
                 columns = cols
             )  
     return results_df
+def gun1_query(t):
+    query = "select * from "+t+""
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df    
 def run_query(a1):
 
     query = "select 입영월,접수인원,지원인원,커트라인 from 군사특기별현황 where 군사특기명='"+a1+"' and 입영부대='육군훈련소'"
@@ -415,12 +436,36 @@ def army_hh():
         image = Image.open('image/'+txt2+'.bmp')    
     st.image(image, caption=txt2)
     st.markdown(mod2_html, unsafe_allow_html=True)
+def army_gunsa():
+    st.header("육군 군사특기 추천")
+    txt5=''
+    txt6=''
+    df1=gun1_query("자격면허")    
+    test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
+    txt3=''.join(test1)
+    txt1=gstg1('자격면허','직접',txt3)
+    txt2=gstg1('자격면허','간접',txt3)
+    col1, col2 = st.columns(2)
+    with col1:
+        t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기명'].drop_duplicates(keep='first'),0)
+    with col2:
+        t_2=st.selectbox('간접관련 군사특기입니다.',txt2['군사특기명'].drop_duplicates(keep='first'),0)
 
-
-
-
+    df2=gun1_query("전공")    
+    test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
+    st.text(test2)
+    txt4=''.join(test2)
+    txt5=gstg1('전공','직접',txt4)
+    txt6=gstg1('전공','간접',txt4)
+    if test1!='입력':
+        col3, col4 = st.columns(2)
+        with col3:
+            t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기명'].drop_duplicates(keep='first'),0)
+        with col4:
+            t_4=st.selectbox('간접관련 군사특기입니다.',txt6['군사특기명'].drop_duplicates(keep='first'),0)
 
 page_names_to_funcs = {
+    "군사특기 추천": army_gunsa,
     "군사특기별 현황": army_hh,
     "수송운용(차량운전) 현황": susong,    
     "나의점수 알아보기": army_jeomsu,
