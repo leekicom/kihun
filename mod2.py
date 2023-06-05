@@ -20,8 +20,8 @@ def gun1_query(t):
                 columns = cols
             )  
     return results_df 
-def gstg1(txt,txt1,txt2):
-    query = "select distinct b.군사특기 from "+txt+" a,직간접 b where a.군구분='해군' and a.검사구분코드=b.관련분야코드 and b.직간접구분='"+txt1+"' and a.검사지침코드명='"+txt2+"'"
+def gstg1(txt1,txt2,txt3,txt4):
+    query = "select distinct b.군사특기 from "+txt1+" a,직간접 b where a.군구분='"+txt2+"' and b.군별='"+txt2+"' and a.검사구분코드=b.관련분야코드 and b.직간접구분='"+txt3+"' and a.검사지침코드명='"+txt4+"'"
     conn = create_connection("mydatabase.db")
     query = conn.execute(query)
     cols = [column[0] for column in query.description]

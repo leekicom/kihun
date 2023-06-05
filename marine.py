@@ -297,7 +297,7 @@ def marine_gunsa():
     df1=mod2.gun1_query("자격면허")    
     test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
     txt3=''.join(test1)
-    txt1=mod2.gstg1('자격면허','직접',txt3)
+    txt1=mod2.gstg1('자격면허','해병','직접',txt3)
     #t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기'].drop_duplicates(keep='first'),0)
     st.text(txt1[['군사특기']])
 
@@ -305,7 +305,7 @@ def marine_gunsa():
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
 
     txt4=''.join(test2)
-    txt5=mod2.gstg1('전공','직접',txt4)
+    txt5=mod2.gstg1('전공','해병','직접',txt4)
     if test1!='입력':
         t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
 def marine_jeomsu():
