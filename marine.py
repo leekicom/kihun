@@ -4,61 +4,14 @@ import pandas as pd
 import altair as alt
 import os
 import mod1
+import mod2
 from PIL import Image
 
-def create_connection(db_file):
-    conn = None
-    try:
-        conn = sqlite3.connect(db_file)
-    except Exception as e:
-        st.write(e)
-    return conn
-def code_query():
-    query = "select * from 특기코드 where 코드 like 'M%'"
-    conn = create_connection("mydatabase.db")
-    query = conn.execute(query)
-    cols = [column[0] for column in query.description]
-    results_code= pd.DataFrame.from_records(
-                data = query.fetchall(), 
-                columns = cols
-            )  
-    return results_code  
-def sogae_query(b):
-    query = "select Column2 from 군사특기소개 where Column1='"+b+"'"
-    conn = create_connection("mydatabase.db")
-    query = conn.execute(query)
-    cols = [column[0] for column in query.description]
-    results_df= pd.DataFrame.from_records(
-                data = query.fetchall(), 
-                columns = cols
-            )  
-    return results_df  
-def jeomsu_query(a,b):
-    query = "select 점수 from 공군점수계산 where 구분='"+a+"' and 자격증구분='"+b+"'"
-    conn = create_connection("mydatabase.db")
 
-    query = conn.execute(query)
-    cols = [column[0] for column in query.description]
-    results_df1= pd.DataFrame.from_records(
-                data = query.fetchall(), 
-                columns = cols
-            )  
-    sum1=int(results_df1.values)
-    return sum1
-def gun_query():
-    query = "select * from 해병대특기별현황"
-    conn = create_connection("mydatabase.db")
-    query = conn.execute(query)
-    cols = [column[0] for column in query.description]
-    results_df= pd.DataFrame.from_records(
-                data = query.fetchall(), 
-                columns = cols
-            )  
-    return results_df
 def marine_hh():
     st.header("해병대 군사특기별 현황")
-    df1=gun_query()
-    code_df=code_query()
+    df1=mod2.gun1_query('해병대특기별현황')
+    code_df=mod2.code_query()
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
 
@@ -81,7 +34,7 @@ def marine_hh():
     ).interactive()
     st.altair_chart(c.interactive(),
         use_container_width=True)
-    code1_txt1=sogae_query(txt4)
+    code1_txt1=mod2.sogae_query(txt4)
     mod2_html=''.join(code1_txt1['Column2'].values)
     try:
         image = Image.open('image/'+txt4+'.jpeg')
@@ -101,7 +54,7 @@ def marine_jeomsu1(txt3,txt4,df2):
     st.markdown("1.자격.면허/배점 70점")
     mod1_html=mod1.html8
     image1=st.markdown(mod1_html, unsafe_allow_html=True)
-    conn = create_connection("mydatabase.db")
+    conn = mod2.create_connection("mydatabase.db")
     query = conn.execute("select 자격증구분 from 공군점수계산 where 구분='일반자격'")
 
     cols = [column[0] for column in query.description]
@@ -111,7 +64,7 @@ def marine_jeomsu1(txt3,txt4,df2):
                 )  
     license1="일반자격"
     license2=st.selectbox('자격증구분을 선택하세요',results_df1)
-    sum1=jeomsu_query(license1,license2)  
+    sum1=mod2.jeomsu_query(license1,license2)  
 
     if txt3!='' and sum1!=0:
         image1.empty()
@@ -127,7 +80,7 @@ def marine_jeomsu1(txt3,txt4,df2):
                     columns = cols)  
         hak2=st.selectbox('결석일자를 선택하세요',results_df1)
         hak1="일반결석일"
-        sum2=jeomsu_query(hak1,hak2)
+        sum2=mod2.jeomsu_query(hak1,hak2)
         if txt3!='' and sum1!=0 and sum2!=0:
             image2.empty()
             sum1_a.empty()
@@ -158,7 +111,7 @@ def marine_jeomsu1(txt3,txt4,df2):
                     data = query.fetchall(), 
                     columns = cols)  
             blood1=st.selectbox('헌혈횟수를 선택하세요',results_df1)
-            sum41=jeomsu_query('헌혈',blood1)
+            sum41=mod2.jeomsu_query('헌혈',blood1)
 
             query = conn.execute("select 자격증구분 from 점수계산 where 구분='봉사시간'")
             cols = [column[0] for column in query.description]
@@ -166,7 +119,7 @@ def marine_jeomsu1(txt3,txt4,df2):
                     data = query.fetchall(), 
                     columns = cols)  
             blood2=st.selectbox('봉사시간을 선택하세요',results_df1)
-            sum42=jeomsu_query('봉사시간',blood2)
+            sum42=mod2.jeomsu_query('봉사시간',blood2)
             if sum41+sum42>8 :
                 sum4=sum4+8
             else:
@@ -193,7 +146,7 @@ def marine_jeomsu1(txt3,txt4,df2):
                 st.altair_chart(c.interactive(),
                         use_container_width=True)
     
-                code1_txt1=sogae_query(txt4)
+                code1_txt1=mod2.sogae_query(txt4)
                 mod2_html=''.join(code1_txt1['Column2'].values)
                 try:
                     image = Image.open('image/'+txt4+'.jpeg')
@@ -215,7 +168,7 @@ def marine_jeomsu2(txt3,txt4,df2):
     st.markdown("1.자격.면허/배점 50점")
     mod1_html=mod1.html12
     image1=st.markdown(mod1_html, unsafe_allow_html=True)
-    conn = create_connection("mydatabase.db")
+    conn = mod2.create_connection("mydatabase.db")
     query = conn.execute("select 자격증구분 from 공군점수계산 where 구분='전문자격'")
 
     cols = [column[0] for column in query.description]
@@ -225,7 +178,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                 )  
     license1="전문자격"
     license2=st.selectbox('자격증구분을 선택하세요',results_df1)
-    sum1=jeomsu_query(license1,license2)  
+    sum1=mod2.jeomsu_query(license1,license2)  
 
     if txt3!='' and sum1!=0:
         image1.empty()
@@ -244,7 +197,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                 data = query.fetchall(), 
                 columns = cols)  
             hak2=st.selectbox('학력구분을 선택하세요',results_df1)
-            sum2=jeomsu_query(hak1,hak2)
+            sum2=mod2.jeomsu_query(hak1,hak2)
         if txt3!='' and sum1!=0 and sum2!=0:
             image2.empty()
             sum1_a.empty()
@@ -260,7 +213,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                     columns = cols)  
             hak2=st.selectbox('결석일자를 선택하세요',results_df1)
             hak1="전문결석일"
-            sum3=jeomsu_query(hak1,hak2)
+            sum3=mod2.jeomsu_query(hak1,hak2)
             if txt3!='' and sum1!=0 and sum2!=0 and sum3!=0:
                 image3.empty()
                 sum2_a.empty()
@@ -291,7 +244,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                     data = query.fetchall(), 
                     columns = cols)  
                 blood1=st.selectbox('헌혈횟수를 선택하세요',results_df1)
-                sum41=jeomsu_query('헌혈',blood1)
+                sum41=mod2.jeomsu_query('헌혈',blood1)
 
                 query = conn.execute("select 자격증구분 from 점수계산 where 구분='봉사시간'")
                 cols = [column[0] for column in query.description]
@@ -299,7 +252,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                     data = query.fetchall(), 
                     columns = cols)  
                 blood2=st.selectbox('봉사시간을 선택하세요',results_df1)
-                sum42=jeomsu_query('봉사시간',blood2)
+                sum42=mod2.jeomsu_query('봉사시간',blood2)
                 if sum41+sum42>8 :
                     sum4=sum4+8
                 else:
@@ -326,7 +279,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                     st.altair_chart(c.interactive(),
                         use_container_width=True)
     
-                    code1_txt1=sogae_query(txt4)
+                    code1_txt1=mod2.sogae_query(txt4)
                     mod2_html=''.join(code1_txt1['Column2'].values)
                     try:
                         image = Image.open('image/'+txt4+'.jpeg')
@@ -338,11 +291,27 @@ def marine_jeomsu2(txt3,txt4,df2):
                     st.markdown(f":blue[{txt3}]")    
                     mod1_html=mod1.html20
                     image5=st.markdown(mod1_html, unsafe_allow_html=True)
+def marine_gunsa():
+    st.header("해병대 군사특기 추천")
+    txt5=''
+    df1=mod2.gun1_query("자격면허")    
+    test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
+    txt3=''.join(test1)
+    txt1=mod2.gstg1('자격면허','직접',txt3)
+    #t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기'].drop_duplicates(keep='first'),0)
+    st.text(txt1[['군사특기']])
 
+    df2=mod2.gun1_query("전공")    
+    test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
+
+    txt4=''.join(test2)
+    txt5=mod2.gstg1('전공','직접',txt4)
+    if test1!='입력':
+        t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
 def marine_jeomsu():
     st.header("나의 점수 미리알아보기")
-    df1=gun_query()
-    code_df=code_query()
+    df1=mod2.gun1_query('해병대특기별현황')
+    code_df=mod2.code_query()
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
 
@@ -356,6 +325,7 @@ def marine_jeomsu():
     else:
         marine_jeomsu2(txt3,txt4,df2)  
 page_names_to_funcs = {
+    "군사특기 추천": marine_gunsa,
     "군사특기별 현황": marine_hh,
     "나의점수 알아보기": marine_jeomsu,
 }

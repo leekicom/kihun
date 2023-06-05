@@ -43,6 +43,27 @@ def gun_query():
                 columns = cols
             )  
     return results_df
+def gun1_query(t):
+    query = "select * from "+t+""
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df 
+def gstg1(txt,txt1,txt2):
+    query = "select distinct b.군사특기 from "+txt+" a,직간접 b where a.군구분='해군' and a.검사구분코드=b.관련분야코드 and b.직간접구분='"+txt1+"' and a.검사지침코드명='"+txt2+"'"
+    conn = create_connection("mydatabase.db")
+
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df 
 def jeomsu_query(a,b):
     query = "select 점수 from 공군점수계산 where 구분='"+a+"' and 자격증구분='"+b+"'"
     conn = create_connection("mydatabase.db")
@@ -357,9 +378,26 @@ def navy_jeomsu2(txt3,txt4,df2):
                     st.markdown(mod2_html, unsafe_allow_html=True)
 
                     st.markdown(f":blue[{txt3}]")    
+def navy_gunsa():
+    st.header("해군 군사특기 추천")
+    txt5=''
+    df1=gun1_query("자격면허")    
+    test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
+    txt3=''.join(test1)
+    txt1=gstg1('자격면허','직접',txt3)
+    t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기'].drop_duplicates(keep='first'),0)
 
+
+    df2=gun1_query("전공")    
+    test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
+
+    txt4=''.join(test2)
+    txt5=gstg1('전공','직접',txt4)
+    if test1!='입력':
+        t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
 
 page_names_to_funcs = {
+    "군사특기 추천": navy_gunsa,
     "군사특기별 현황": navy_hh,
     "나의점수 알아보기": navy_jeomsu,
 }
