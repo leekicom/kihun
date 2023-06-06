@@ -303,17 +303,17 @@ def air_force_gunsa():
     df1=mod2.gun1_query("자격면허")    
     test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
     txt3=''.join(test1)
-    txt1=mod2.gstg1('자격면허','공군','직접',txt3)
-    st.text(txt1[['군사특기']])
+    st.text(txt3)
+    txt1=mod2.gstg2('자격면허','공군','직접',txt3,'공군특기별현황')
+    st.dataframe(txt1)
 
 
     df2=mod2.gun1_query("전공")    
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
 
     txt4=''.join(test2)
-    txt5=mod2.gstg1('전공','공군','직접',txt4)
-    if test1!='입력':
-        t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
+    txt5=mod2.gstg2('전공','공군','직접',txt4,'공군특기별현황')
+    st.dataframe(txt5)
 
 page_names_to_funcs = {
     "군사특기 추천": air_force_gunsa,

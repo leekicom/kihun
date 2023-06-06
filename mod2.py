@@ -30,6 +30,16 @@ def gstg1(txt1,txt2,txt3,txt4):
                 columns = cols
             )  
     return results_df 
+def gstg2(txt1,txt2,txt3,txt4,txt5):
+    query = "select distinct b.군사특기,c.입영월,c.커트라인,c.선발인원 from "+txt1+" a,직간접 b,"+txt5+" c where a.군구분='"+txt2+"' and b.군별='"+txt2+"' and a.검사구분코드=b.관련분야코드 and b.직간접구분='"+txt3+"' and a.검사지침코드명='"+txt4+"' and b.군사특기=c.특기 and c.입영월=(select max(k.입영월) from "+txt5+" k where k.특기=c.특기)      "
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_df 
 def code_query():
     query = "select * from 특기코드 where 코드 like 'M%'"
     conn = create_connection("mydatabase.db")
