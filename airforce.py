@@ -10,7 +10,7 @@ from PIL import Image
 def air_force_hh():
     st.header("공군 군사특기별 현황")
     df1=mod2.gun1_query('공군특기별현황')
-    code_df=mod2.code_query()
+    code_df=mod2.code_query('A')
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
     result3=df3['대분류'].values
@@ -44,7 +44,7 @@ def air_force_hh():
 def air_force_jeomsu():
     st.header("나의 점수 미리알아보기")
     df1=mod2.gun1_query('공군특기별현황')
-    code_df=mod2.code_query()
+    code_df=mod2.code_query('A')
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
 

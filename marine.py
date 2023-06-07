@@ -11,7 +11,7 @@ from PIL import Image
 def marine_hh():
     st.header("해병대 군사특기별 현황")
     df1=mod2.gun1_query('해병대특기별현황')
-    code_df=mod2.code_query()
+    code_df=mod2.code_query('M')
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
 
@@ -311,7 +311,7 @@ def marine_gunsa():
 def marine_jeomsu():
     st.header("나의 점수 미리알아보기")
     df1=mod2.gun1_query('해병대특기별현황')
-    code_df=mod2.code_query()
+    code_df=mod2.code_query('M')
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
     df3=code_df.query("소분류=='"+test1+"'")
 
@@ -320,7 +320,7 @@ def marine_jeomsu():
     txt3=''.join(result3)
     txt4=''.join(result4)
     df2=df1.query("특기=='"+txt3+"'")
-    if txt3 in ('일반'):
+    if txt3 in ('일반','수색'):
         marine_jeomsu1(txt3,txt4,df2)
     else:
         marine_jeomsu2(txt3,txt4,df2)  

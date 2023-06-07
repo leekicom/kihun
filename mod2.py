@@ -40,8 +40,8 @@ def gstg2(txt1,txt2,txt3,txt4,txt5):
                 columns = cols
             )  
     return results_df 
-def code_query():
-    query = "select * from 특기코드 where 코드 like 'M%'"
+def code_query(q):
+    query = "select * from 특기코드 where 코드 like '"+q+"%'"
     conn = create_connection("mydatabase.db")
     query = conn.execute(query)
     cols = [column[0] for column in query.description]
