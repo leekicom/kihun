@@ -460,9 +460,11 @@ def army_gunsa():
     if test1!='입력':
         col3, col4 = st.columns(2)
         with col3:
-            t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기명'].drop_duplicates(keep='first'),0)
+            st.text('직접관련 군사특기입니다.')
+            st.dataframe(txt5,width=300)
         with col4:
-            t_4=st.selectbox('간접관련 군사특기입니다.',txt6['군사특기명'].drop_duplicates(keep='first'),0)
+            st.text('간접관련 군사특기입니다.')
+            st.dataframe(txt6,width=300)
 
 page_names_to_funcs = {
     "군사특기 추천": army_gunsa,

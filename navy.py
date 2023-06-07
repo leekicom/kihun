@@ -325,7 +325,7 @@ def navy_gunsa():
     txt4=''.join(test2)
     txt5=mod2.gstg1('전공','해군','직접',txt4)
     if test1!='입력':
-        t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
+            st.dataframe(txt5,width=300)
 
 page_names_to_funcs = {
     "군사특기 추천": navy_gunsa,

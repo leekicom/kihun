@@ -313,7 +313,7 @@ def air_force_gunsa():
 
     txt4=''.join(test2)
     txt5=mod2.gstg2('전공','공군','직접',txt4,'공군특기별현황')
-    st.dataframe(txt5)
+    st.dataframe(txt5,width=300)
 
 page_names_to_funcs = {
     "군사특기 추천": air_force_gunsa,

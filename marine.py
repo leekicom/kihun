@@ -307,7 +307,7 @@ def marine_gunsa():
     txt4=''.join(test2)
     txt5=mod2.gstg1('전공','해병','직접',txt4)
     if test1!='입력':
-        t_3=st.selectbox('직접관련 군사특기입니다.',txt5['군사특기'].drop_duplicates(keep='first'),0)
+        st.dataframe(txt5,width=300)
 def marine_jeomsu():
     st.header("나의 점수 미리알아보기")
     df1=mod2.gun1_query('해병대특기별현황')
