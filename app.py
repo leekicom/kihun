@@ -13,7 +13,7 @@ dashboards = {
     "해군": os.path.join(root, "navy.py"),
     "공군": os.path.join(root, "airforce.py"),
     "해병대": os.path.join(root, "marine.py"),
-    "테스트": os.path.join(root, "test.py"),
+    "모집계획": os.path.join(root, "mjgh.py"),
     "Database": os.path.join(root, "datatest.py")
 }
 
