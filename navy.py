@@ -326,10 +326,13 @@ def navy_gunsa():
     txt5=mod2.gstg1('전공','해군','직접',txt4)
     if test1!='입력':
             st.dataframe(txt5,width=300)
-
+def jmtg():
+    st.header("전문특기병 안내")
+    st.markdown(mod1.html61, unsafe_allow_html=True)    
 page_names_to_funcs = {
     "군사특기 추천": navy_gunsa,
     "군사특기별 현황": navy_hh,
+    "전문특기병 안내": jmtg,
     "나의점수 알아보기": navy_jeomsu,
 }
 

@@ -314,10 +314,13 @@ def air_force_gunsa():
     txt4=''.join(test2)
     txt5=mod2.gstg2('전공','공군','직접',txt4,'공군특기별현황')
     st.dataframe(txt5,width=300)
-
+def jmtg():
+    st.header("전문특기병 안내")
+    st.markdown(mod1.html60, unsafe_allow_html=True)    
 page_names_to_funcs = {
     "군사특기 추천": air_force_gunsa,
     "군사특기별 현황": air_force_hh,
+    "전문특기병 안내": jmtg,
     "나의점수 알아보기": air_force_jeomsu,
 }
 

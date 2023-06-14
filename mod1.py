@@ -10122,3 +10122,1797 @@ html57="""<div id="contents">
 </div>
 	                            <!-- 컨탠츠 페이지 끝 -->
 	                        </div>"""
+html60="""<div class="layout_h3">
+<h3>자격요건</h3>
+
+<table class="table_row">
+	<caption>자격요건에 대한 표이며 구분, 직종, 지원자격/선발전형에 대한내용 제공</caption>
+	<colgroup>
+		<col class="width_20p">
+		<col class="width_15p">
+		<col class="width_auto">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="row">구 분</th>
+			<th scope="row">직 종</th>
+			<th scope="row">지원자격/선발전형</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">일반</th>
+			<td>
+			<p>일반</p>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격증 또는 전공과 관련없이 누구나 지원가능
+				<ul>
+					<li>방공포/조리/군사경찰 특기 선택시 가점부여 (<strong><span style="color: rgb(0, 0, 255);">일반 직종만&nbsp;적용</span></strong>)</li>
+					<li><span style="color: rgb(0, 128, 0);">'공병'은 '일반'으로 통합모집('23년 4회차(7월 입영)&nbsp;접수자부터)</span></li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th rowspan="3" scope="row">전문<br>
+			기술</th>
+			<td>기계/<br>
+			차량정비/<br>
+			화생방/<br>
+			의무/<br>
+			전자계산</td>
+			<td>
+			<ul class="list">
+				<li>자격/면허 소지자(접수마감일까지 취득한 자)&nbsp;또는&nbsp;관련 직종 전공자
+				<ul>
+					<li>단,&nbsp;화생방 직종은 2종 보통(<span style="color: rgb(0, 0, 205);"><strong>오토면허 제외</strong></span>) 이상 운전면허 소지자(4점) 가점 부여</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>차량운전</td>
+			<td>
+			<ul class="list">
+				<li>2종 보통 이상 운전면허증 소지자(<strong><span style="color: rgb(0, 0, 205);">오토면허 제외</span></strong>)</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>통신전자전기</td>
+			<td>
+			<ul>
+				<li>자격증 또는 전공과 관련없이 누구나 지원가능
+				<ul>
+					<li>통신전자전기 관련 자격, 면허 소지자, 전공자는 배점 부여</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th rowspan="16" scope="row">전문<br>
+			특기병</th>
+			<td>영어어학병</td>
+			<td>
+			<ul class="list">
+				<li><span style="font-size: 14px;">다음의 공인영어성적 기준 이상 보유자(접수마감일 기준 2년이내 성적만 인정)</span></li>
+				<li>TOEIC 900점,&nbsp;<strong><span style="color: rgb(0, 0, 255);">TEPS 370점,</span></strong>&nbsp;TOEFL(IBT) 105점,&nbsp;TOEIC SPEAKING 160점, TEPS &nbsp;SPEAKING 66점 이상자</li>
+				<li><strong><span style="color: rgb(0, 0, 205);">정기시험만 해당 </span></strong>(특별/수시시험은 해당되지 않음.)</li>
+				<li><strong><span style="color: rgb(0, 0, 205);">'23년도 접수시기(예정)</span></strong> : '<strong><span style="color: rgb(0, 0, 205);">22.12회차('23년 3월입영), '23.2회차('23년 5월입영), '23.7회차('23년 10월입영), '23.10회차('24년 1월입영)</span></strong></li>
+				<li><span style="color: rgb(0, 0, 0);">텝스(TEPS) 어학성적은 '신규 점수환산표' 적용에 따라 370점으로 기준변경 ('22</span>년 1회차('22년 4월입영자)&nbsp;부터 적용)</li>
+			</ul>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →&nbsp;접수시기는 공군 공지사항 '23년도 모집일정 안내' 참조.<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → 상기 모집일정은 사정에 따라 변경될 수 있음.
+			<ul class="list">
+				<li>1차 : 모집계획 대비 3배수 선발
+				<ul class="list">
+					<li>출결+가산점 합계 고득점자 순(동점자 : 가산점 &gt; 출결 &gt; 생년월일 순)</li>
+				</ul>
+				</li>
+				<li>2차 : 1차전형 선발자에 한하여 공군본부의 특별전형 실시
+				<ul class="list">
+					<li>필기(60점) :&nbsp;영어→한글(3개문항) 30점, 한글→영어(3개문항) 30점</li>
+					<li>구술(15점) : 녹음된 영어지문 및 한글지문 통역(3개문항-문제당 5점)</li>
+					<li>면접(25점) : 면접태도(5점), 표현력(5점), 학교생활(5점), 대인관계역량(5점), 의지/정신력(5점)</li>
+				</ul>
+				</li>
+				<li><span style="color: rgb(0, 0, 255);">실기전형(2차 전형) 결과 동점일 경우 구술, 필기 평가 우수자 선발</span></li>
+				<li><span style="color: rgb(0, 0, 255);">활용분야 :&nbsp; 영어어학병은 전 특기로 분류되며, 주로 해당특기 행정업무와 통/번역 업무 수행함.</span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>의장병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음의 기준을 모두 만족하는 자
+				<ul>
+					<li>신장 : 180cm 이상</li>
+					<li>체중 : 65kg ~ 85kg</li>
+					<li>시력 : <span style="color: rgb(0, 0, 255);">교정시력 0.7이상</span><span style="font-size: 12px;">(안경 착용 후 0.7이상인 자도 지원가능, 렌즈착용 불가자는 지원할수 없음)</span></li>
+					<li>문신 : 반팔 셔츠 착용시 문신시 보이지 않는 자</li>
+					<li>체력 : 팔굽혀펴기 15회 이상(1분), 윗몸일으키기 19회 이상(1분), 쪼그려뛰기 10회 이상(1분)</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 지원자 전원선발</li>
+					<li>2차 : 공군 특별전형(체력 75점+면접 25점)</li>
+					<li>
+					<div data-hjsonver="1.0" data-jsonlen="6651">최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</div>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>군악병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 어느 한가지 이상 충족하는 자
+				<ul>
+					<li>지정곡(초견악보) 및 자유곡 연주 가능자</li>
+					<li>지원파트 관련학과 대학 전공자</li>
+					<li>고등학교(중학교) 관악부 및 동아리(군악대 모집파트) 활동자</li>
+					<li>예술고등학교<span style="font-size: 11px;">(음악, 무용, 발레 등)</span> 전공자 : <span style="font-size: 12px;">선발 시만 지원자격 공고</span></li>
+					<li>지원파트 연주 및 실무 경력 1년 이상자<span style="font-size: 12px;"> </span></li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 지원자 전원선발</li>
+					<li>2차 : 공군 특별전형(실기(전공별 자유곡 1곡, 초견연주 평가) 75점+면접 25점)</li>
+					<li>
+					<div data-hjsonver="1.0" data-jsonlen="7608">최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</div>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>군견관리병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 애완, 축산관련 자격면허 소지자 또는 전공자</li>
+				<li>선발전형
+				<ul class="list">
+					<li>1차 : 출결+가산점의 합계 고득점자 순 300% 선발</li>
+					<li>2차 : 공군 특별전형(전공/경력 35점+자격 40점+면접 25점)</li>
+					<li>
+					<div data-hjsonver="1.0" data-jsonlen="6671">최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</div>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>정보보호병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 한가지 이상을 충족하는 자
+				<ul>
+					<li>전공
+					<ul>
+						<li>4년제 대학교 또는 전문대학에서 정보보호 및 컴퓨터(전산) 관련학과 전공자 <font color="#0000ff">(1년 수료 이상)</font></li>
+						<li>고등학교 졸업자&nbsp;중 정보보호 또는 컴퓨터(전산)학과 전공자</li>
+					</ul>
+					</li>
+					<li>자격증
+					<ul>
+						<li>정보보호 : 정보보안기사·산업기사, 정보보호전문가, 디지털포렌식전문가 등</li>
+						<li>정보기술 : 정보처리기사·산업기사 등</li>
+					</ul>
+					</li>
+					<li>업무경력 : 공공, 민간기관 정보보호 업무경력(6개월 이상자)</li>
+					<li>기타
+					<ul>
+						<li>IT 역량지수(TOPCIT) 정기평가 300점이상 획득자</li>
+						<li>BoB센터 "차세대 보안리더 양성 프로그램"과정 선발자</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul class="list">
+					<li>1차 : 출결+가산점의 합계 고득점자 순 300% 선발</li>
+					<li>2차 : 공군 특별전형 실시(전공 35점+자격 30점+경력 5점+전문교육 5점+면접 25점)</li>
+					<li>최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>IT개발관리병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 한가지 이상을 충족하는 자
+				<ul>
+					<li>전공
+					<ul>
+						<li>대학교/전문대학의 SW 혹은 AI 관련학과 전공자 <font color="#0000ff">(1년 수료 이상)</font></li>
+						<li>AI·SW 분야 석사과정 이수자</li>
+					</ul>
+					</li>
+					<li>경력
+					<ul>
+						<li>AI·SW 분야 연구경력(업체 AI 연구인턴십, 대학교 연구실 경험)</li>
+						<li>AI·SW 분야 실무경력 3개월 이상 보유자(공공기관/민간업체)</li>
+						<li>AI·SW 관련 경진대회 수상경력 보유자(DACON, Kaggle, 기타 AI 경진대회 등)</li>
+					</ul>
+					</li>
+					<li>기타
+					<ul>
+						<li>AI·SW 분야 관련 논문/특허 실적 보유자</li>
+						<li>AI·SW 전문교육 이수자(Boostcamp AI Tech 과정, 소프트웨어 마에스트로 등)</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul class="list">
+					<li>1차 : 출결+가산점의 합계 고득점자 순 300% 선발</li>
+					<li>2차 : 공군 특별전형(전공 30점+자격 25점+연구·실무/수상경력 10점+전문교육 5점+면접 30점)</li>
+					<li>최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>특수임무<br>
+			군사경찰</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음의 기준을 모두 만족하는 자
+				<ul>
+					<li>신체조건 : <span style="color: rgb(0, 0, 255);">신체등급 1~2급, 신장 170Cm이상, 나안시력 0.8이상인 자</span></li>
+					<li>무도자격 : 태권도, 검도, 유도, 합기도, 특공무술, 킥복싱 등 <span style="color: rgb(0, 0, 255);">무도 1단 이상자</span></li>
+					<li>체력 : 팔굽혀펴기 40개이상(2분), 윗몸일으키기 50개이상(2분), 1.5km 달리기(7분 8초 이내)</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 지원자 전원선발</li>
+					<li>2차 : 공군 특별전형(자격증 30점+전공/경력 10점+체력 35점+면접 25점)</li>
+					<li>최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>정훈병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 아래 자격/면허, 전공 중 한 가지 이상을 충족하는 자
+				<ul>
+					<li>자격/면허&nbsp;:&nbsp;사진기능사, 그래픽기술자격(GTQ) 1급/2급, 디지털영상편집 1급/2급,&nbsp;<strong>멀티미디어콘텐츠제작전문가, 컴퓨터그래픽스운용기능사, 웹디자인기능사</strong></li>
+					<li>전공&nbsp;:&nbsp;사진학과, 영상학과, 멀티미디어학과, 언론정보학, 신문방송학과</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 :&nbsp;출결+가산점의 합계 고득점자 순 300% 선발</li>
+					<li>2차 : 공군 특별전형(실기 60점(사진 30, 영상 30)+서류 15점(전공 10, 자격증 5)+면접 25점)</li>
+					<li>최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>콘텐츠<br>
+			제작병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : <span style="color: rgb(0, 0, 255);">전공(대학교 4학기 수료 이상)</span><span style="color: rgb(0, 0, 0);">,</span><span style="color: rgb(0, 0, 255);"> </span>경력(실무 6개월 이상) 중 1가지 이상을 충족하는 자</li>
+				<li>모집분야 (3개) : 그래픽디자인, 영상 촬영·편집, 일러스트레이션/웹툰
+				<ul>
+					<li><strong><font color="#0000cd">그래픽디자인</font></strong>
+					<ul>
+						<li>(전공) 시각, 커뮤니케이션 디자인/디지털미디어, 멀티미디어, 콘텐츠미디어 디자인 등 디자인 관련학과(대학교 4학기 수료 이상)</li>
+						<li>(경력) 그래픽 디자인/브랜딩/콘텐츠 제작 등 디자인 관련분야</li>
+					</ul>
+					</li>
+					<li><span style="color: rgb(0, 0, 205);"><strong>영상 촬영·편집</strong></span>
+					<ul>
+						<li>(전공) 영상/미디어학/영화 등 영상 관련학과(대학교 4학기 수료 이상)</li>
+						<li>(경력) 영상/영화/편집/촬영 등 영상 관련분야</li>
+					</ul>
+					</li>
+					<li><span style="color: rgb(0, 0, 205);"><strong>일러스트레이션/웹툰</strong></span>
+					<ul>
+						<li>(전공) 회화/만화/애니메이션 등 일러스트레이션 및 웹툰 관련학과(대학교 4학기 수료 이상)</li>
+						<li>(경력) 웹툰/일러스트레이터/만화/편집디자인 등 관련분야</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 출결+가산점의 합계 고득점자 순 300%선발</li>
+					<li>2차 : 공군 특별전형(전공 및 경력 40점+실습 35점+면접 25점)</li>
+					<li>최종 : 공군 특별전형 평가결과 합격자에 한하여 최종선발 대상에 포함됨</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>식별<br>
+			보조병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 어느 한가지 이상을 충족하는 자
+				<ul>
+					<li>중국어, CPT&nbsp;500 / 신 HSK 4급 이상자<span style="font-size: 12px;">(접수마감일 기준&nbsp;2년이내 성적만 인정)</span></li>
+					<li>일본어, JPT 600 이상자<span style="font-size: 12px;">(접수마감일 기준&nbsp;2년이내 성적만 인정)</span></li>
+					<li>러시아어, TORFL 1단계 이상자<span style="font-size: 12px;">(접수마감일 기준&nbsp;2년이내 성적만 인정)</span></li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 자격면허(50점) + 출결(10점) + 가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>전문자격<br>
+			의무병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격&nbsp;:<span style="color: rgb(0, 0, 255);"><strong>&nbsp;"</strong>약사" 면허를 취득한 자</span></li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 자격면허(50점) + 출결(10점) + 가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>교육훈련<br>
+			매체개발병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 전공(고졸 이상), 경력<span style="color: rgb(0, 0, 255);">(실무 1년 이상)</span>&nbsp;중 1가지 이상을 충족하는 자</li>
+				<li>모집분야 (4개) : 3D모델링, 프로그램개발, 디자인, 영상/사진
+				<ul>
+					<li><span style="color: rgb(0, 0, 205);"><strong>3D모델링 </strong></span>
+					<ul>
+						<li>(전공) 산업/제품 디자인, 게임 그래픽, 건축 등 3D모델링 관련학과</li>
+						<li>(경력) 산업디자인, 게임 3D모델링, 3D 모션그래픽, 건축, 설계 등 3D모델링 관련 분야(1년 이상)</li>
+					</ul>
+					</li>
+					<li><strong><span style="color: rgb(0, 0, 205);">프로그램개발&nbsp;</span></strong>
+					<ul>
+						<li>(전공) 컴퓨터공학, 컴퓨터과학, 전산학, 정보통신 등 프로그램개발 관련학과</li>
+						<li>(경력) 소프트웨어/어플리게이션/웹/게임/서버 개발 등 프로그램개발 관련 분야(1년 이상)</li>
+					</ul>
+					</li>
+					<li><span style="color: rgb(0, 0, 205);"><strong>디자인 </strong></span>
+					<ul>
+						<li>(전공) 시각/커뮤니케이션/디지털미디어/멀티미디어/콘텐츠미디어 디자인 등 디자인 관련학과</li>
+						<li>(경력) UX·UI 디자인, 그래픽 디자인, 일러스트레이션 등 디자인 관련 분야(1년 이상)</li>
+					</ul>
+					</li>
+					<li><span style="color: rgb(0, 0, 205);"><strong>영상/사진 </strong></span>
+					<ul>
+						<li>(전공) 영상/시각 디자인, 영화, 콘텐츠미디어 등 영상 관련학과</li>
+						<li>(경력) 촬영, 편집, 모션그래픽 등 영상 관련 분야(1년 이상)</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 전공(20점)+출결(5점)+경력(20점)의 합계 고득점자 순 300% 선발</li>
+					<li>2차 : 공군본부면접(25점)+실습(30점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>비파괴검사병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 필수 자격요건을 충족하는 자
+				<ul>
+					<li>자격증<strong><span style="color: rgb(0, 0, 255);"> (필수소지)</span></strong> : 비파괴검사기술사, 와전류비파괴검사기사, 초음파비파괴검사기사/산업기사/기능사,&nbsp;자기비파괴검사기사/산업기사/기능사, 침투비파괴검사기사/산업기사/기능사</li>
+					<li>전공 : 금속공학과, 기계공학과, 기계과, 물리학과, 재료공학과</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul class="list">
+					<li>1차 : 자격(45점)+전공(30점)+ 출결(10점)+가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>우주기상<br>
+			분석병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 어느 한가지 이상을 충족하는 자
+				<ul>
+					<li>전공 : 천문우주학과, 우주과학과, 대기과학, 컴퓨터과학, 물리, 수학, 지구과학교육 전공자</li>
+					<li>경력 : 국가기관 주관 데이터 처리 부문 수상 이력자(PHP, JSP 관련 개발 이력자 6개월 이상)</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul class="list">
+					<li>1차 : 경력(25점)+전공(25점)+자격증(25점)+출결(10점)+가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>운항관리병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 필수 자격요건을 충족하는 자
+				<ul>
+					<li>전공<strong><span style="color: rgb(0, 0, 255);">(필수)</span></strong> : 항공교통학, 항공운항학 관련 학과 재학 중인 자</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 전공(75점)+출결(10점)+가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>조리병</td>
+			<td>
+			<ul class="list">
+				<li>지원자격 : 다음 자격요건 중 어느 한가지 이상을 충족하는 자
+				<ul>
+					<li>전공 : 조리 관련 분야 전공자</li>
+					<li>자격 : 조리 관련 기능사급 이상 자격증 (한식, 일식, 양식, 중식)</li>
+				</ul>
+				</li>
+				<li>선발전형
+				<ul>
+					<li>1차 : 자격(30점)+전공(20점)+출결(10점)+가산점(15점)의 합계 고득점자 순 200% 선발</li>
+					<li>2차 : 병무청 면접(25점)</li>
+					<li>최종 : 1차+2차 합계 고득점자 순</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>"""
+html61="""<div class="layout_h3">
+<h3>별도선발(전문특기병)</h3>
+&nbsp; * 전문특기병 지원자는 타군&nbsp;및 타모집분야(특기)에 중복지원이 불가합니다.<br>
+&nbsp; * 선발방법 : 종합성적이 높은 사람순으로 선발(배점기준 아래 표 참조)<br>
+&nbsp; ※ 정보보호병과 CBT병은 복수국적자 지원불가 : 복수국적자는 비밀취급인가 불가로 해당 특기 분과 제외됨
+<div class="table_scroll">
+<table class="table_row">
+	<colgroup>
+		<col style="width: 10%;">
+		<col style="width: 37%;">
+		<col style="width: 40%;">
+		<col style="width: 13%;">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="row">특기</th>
+			<th scope="col">지원자격</th>
+			<th scope="col">배점기준</th>
+			<th scope="col">임무</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">정보보호병</th>
+			<td>
+			<ul class="list">
+				<li>다음 자격증 소지자
+				<ul class="list" style="padding: 0px;">
+					<li>국내.외 공인 정보보호자격증</li>
+					<li>IT 국제공인자격증</li>
+					<li>프로그래밍/기타 관련 자격증</li>
+					<li>ICT 역량지수(TOPCIT) 정기평가 300점 이상</li>
+				</ul>
+				</li>
+			</ul>
+			* 세부 해당 자격증은 아래 참조
+			<ul class="list">
+				<li>다음 관련학과 전공자
+				<ul class="list" style="padding: 0px;">
+					<li>4년제 대학, 전문대학 : 정보보호, 컴퓨터, 전산 관련 학과 1년 수료이상</li>
+					<li>고등학교 : 정보보호 관련 학과 졸업자</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격증(30점) + 경력(20점) + 전공(50점) + 면접(100점)</li>
+				<li>자격, 경력, 전공 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>사이버 보호, 서버/네트워크 관리 등</td>
+		</tr>
+		<tr>
+			<th scope="row">CBT병</th>
+			<td>
+			<ul class="list">
+				<li>관련 자격증 소지자, 관련 학과</li>
+				<li>전공자, 관련 근무 경력자</li>
+			</ul>
+			* 세부 내용은 아래 참조</td>
+			<td>
+			<ul class="list">
+				<li>자격증(30점) + 경력(30점) + 전공(40점) + 면접(100점)</li>
+				<li>자격증, 경력, 전공 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>사이버 교육 교재 제작, 개선 등</td>
+		</tr>
+		<tr>
+			<th scope="row">S/W개발병</th>
+			<td>
+			<ul class="list">
+				<li>다음 자격증 소지자 또는 전공자
+				<ul class="list" style="padding: 0px;">
+					<li>자격
+					<ul class="list" style="padding: 0px;">
+						<li>정보처리기사(산업기사, 기능사)</li>
+						<li>시각디자인기사(산업기사)</li>
+						<li>웹디자인기능사</li>
+					</ul>
+					</li>
+				</ul>
+				<ul class="list" style="padding: 0px;">
+					<li>전공
+					<ul class="list" style="padding: 0px;">
+						<li>컴퓨터공학</li>
+						<li>컴퓨터시스템</li>
+						<li>공학</li>
+						<li>디지털미디어</li>
+						<li>시각디자인</li>
+						<li>멀티미디어</li>
+						<li>전산학</li>
+					</ul>
+					</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격(30점) + 경력(30점) + 전공(40점) + 면접(100점)</li>
+				<li>자격, 경력, 전공 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>소프트웨어 개발</td>
+		</tr>
+		<tr>
+			<th scope="row">신기술융합<br>
+			연구병</th>
+			<td>
+			<ul class="list">
+				<li>다음 자격요건 중 하나 이상 충족하는 사람</li>
+				<li>자격
+				<ul class="list" style="padding: 0px;">
+					<li>로봇/신소재/IT 관련 국내외 공인 자격증 소지자</li>
+					<li>ICT역량지수(TOPCIT) 정기평가 400점 이상 획득자</li>
+				</ul>
+				</li>
+				<li><strong><u>전공: 관련학과 대학 3학년 이상 재학 또는 졸업자 </u></strong>(세부 전공/자격 목록은 아래 참조)</li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격(30점)+전공(50점)+경력(20점)+면접(100점)<br>
+				* 항목별 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>사물/만물<br>
+			인터넷 연구병,<br>
+			첨단센서<br>
+			연구병,<br>
+			신소재연구병,<br>
+			무인로봇<br>
+			연구병,<br>
+			인공지능<br>
+			연구병,<br>
+			양자정보<br>
+			연구병,<br>
+			신추진연구병,<br>
+			가상/증강현실연구병</td>
+		</tr>
+		<tr>
+			<th scope="row">빅데이터<br>
+			분석병</th>
+			<td>
+			<ul class="list">
+				<li>자격
+				<ul class="list" style="padding: 0px;">
+					<li>IT 관련 국내외 공인 자격증 소지자</li>
+					<li>ICT역량지수(TOPCIT) 정기평가 400점 이상 획득자</li>
+				</ul>
+				</li>
+				<li>전공 :<span style="color: rgb(0, 0, 0);"><strong> IT(분류) 전 학과(소프트웨어학과, 컴퓨터공학과, 정보통신공학과, 인공지능학과 등) 3학년 이상 재학 또는 졸업자</strong></span></li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격(30점)+전공(50점)+경력(20점)+면접(100점)<br>
+				* 항목별 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>빅데이터<br>
+			분석병</td>
+		</tr>
+		<tr>
+			<th scope="row">전문의무병</th>
+			<td>
+			<ul class="list">
+				<li>간호사, 임상병리사, 방사선사, 물리치료사, 약사, <span style="color: rgb(0, 0, 0);">응급구조사 1급 면허 보유자</span></li>
+			</ul>
+			* 상기 면허 보유 필수<br>
+			(관련 학과 전공자라 하더라도 상기 면허 미보유자는 지원불가 / 일반의무병은 가능) (일반의무병은 일반기술/전문 기술병 으로 지원 : '의무' 계열 선택)</td>
+			<td>
+			<ul class="list">
+				<li>경력(80점) + 고교출결(20점) + 면접(100점)</li>
+				<li>경력, 고교출결 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;출결&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>군의관/간호장교 보좌,<br>
+			의료보조</td>
+		</tr>
+		<tr>
+			<th scope="row">지식<br>
+			재산<br>
+			관리병</th>
+			<td>
+			<ul class="list">
+				<li>자격
+				<ul class="list" style="padding: 0px;">
+					<li>변리사 자격증 소지자(최종시험 합격자 포함)</li>
+					<li><span style="color: rgb(0, 0, 255);">관련분야 1년 이상 근무경력자<br>
+					* 관련분야<br>
+					&nbsp;&nbsp;1. 특허법인(명세사, 도면사)<br>
+					&nbsp;&nbsp;2. 선행기술조사기관 등 지식 재산 관련업종 </span></li>
+					<li>지식재산 능력시험(IPAT) 3급이상 소지자</li>
+					<li><span style="color: rgb(0, 0, 255);">지식재산권(특허/실용신안) 1건 이상 단독출원 및 등록자 </span>(법정대리인 예외)</li>
+					<li>지식재산 관련학과 4학기(2년) 이상 이수자 (관련학과 : 지식재산학과, 발명특허학과, 지적재산권학과)</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격(15점) + 전공(85점) + 면접(100점)</li>
+				<li>자격, 전공 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>지식재산권<br>
+			보호, 관리 등</td>
+		</tr>
+		<tr>
+			<th scope="row">인공지능(AI)<br>
+			개발특기병</th>
+			<td>
+			<ul class="list">
+				<li>자격
+				<ul class="list" style="padding: 0px;">
+					<li>파이썬마스터 1급, 빅데이터분석기사, 데이터분석(준)전문가, SQL전문가, SQL개발자, IT국제공인 자격증(OCP, OCM)</li>
+					<li>ICT 역량지수(TOPCIT) 정기평가 400점 이상 획득자</li>
+				</ul>
+				</li>
+				<li>전공 : 컴퓨터공학과, 컴퓨터시스템공학, 인공지능학과, 인공지능학부, AI융합학부, 인공지능융합전공, 인공지능융합학부, AI시스템과, AI학과, 인공지능공학과 등 컴퓨터 사이언스 및 인공지능 관련 학과 3학년 이상 재학자 및 졸업자</li>
+			</ul>
+			</td>
+			<td>
+			<ul class="list">
+				<li>자격증(20점) + 경력(40점) + 전공(40점)</li>
+				<li>자격증, 경력, 전공 세부배점 : 아래 참조</li>
+				<li>면접 : 태도, 표현력, 학교생활, 의지력/정신력, 전문성
+				<ul class="list" style="padding: 0px;">
+					<li>항목별 각 20점(수 20, 우 15, 미 10, 양 5, 가 0)</li>
+					<li>1개항목이라도 '가(0점)' 평가를 받거나 5개항목 합계 점수가 50점미만인 사람은 불합격</li>
+				</ul>
+				</li>
+			</ul>
+			* 동점자 처리기준 : 면접&nbsp;&gt;&nbsp;자격.면허&nbsp;&gt;&nbsp;전공&nbsp;&gt;&nbsp;경력&nbsp;&gt;&nbsp;생년월일 빠른 순</td>
+			<td>인공지능체계 개발 보좌</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h4">
+<h4>정보보호병 지원가능 자격증 세부내역</h4>
+
+<div class="table_scroll">
+<table class="table_col">
+	<tbody>
+		<tr>
+			<td style="text-align: center;">국내.외 공인 정보보호자격증</td>
+			<td>정보시스템보안전문가(CISSP), 사이버포렌식전문가(CCFP), 정보보호관리사(CISM), 정보시스템감시사(CISA),<br>
+			정보보안기사/산업기사, 디지털포렌식전전문가1/2급, 인터넷보안전문가1/2급, 정보보안관리사(ISM),<br>
+			해킹보안전문가1/2급, 윤리적해커인증(CEH), 정보보호관리체계(ISMS) 심사평가원 자격, 컴퓨터해킹포렌식수사관(CHFI)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">IT 국제공인자격증</td>
+			<td>MCSA, MCSE, MCSD, MCT, MTA, MCAD, CCDA, CCNA, CCDP, CCNP, CCIE, SCYBER, OCA, OCP, OCPJP, OCMJD, OCM, OCMJEA, LPIC, RHIC, RHCT, SCSA, SCNA</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">프로그래밍/기타 관련 자격증</td>
+			<td>OCJP, SCJP, SCJD, WCD, 정보처리기사/산업기사, 네트워크관리사</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>정보보호병 세부배점 내역</h4>
+
+<div class="layout_h5">
+<h5>자격증</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">국내.외 공인 정보보호자격증</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">IT 국제공인자격증</td>
+			<td rowspan="2" style="text-align: center;">24점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">ICT 역량지수(TOPCIT) 정기평가 300점 이상</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">프로그래밍/기타 관련 자격증</td>
+			<td style="text-align: center;">18점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">12점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>경력</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">공공, 민간기관 정보보호업무경력(6개월 이상)</td>
+			<td rowspan="2" style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">공공, 민간기관 프로그램 개발 프로젝트 또는 프로그램/네트워크관리 등<br>
+			실무경력(6개월 이상)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">BoB센터 “차세대 보안리더 양성 프로그램” 과정 이수자</td>
+			<td rowspan="2" style="text-align: center;">16점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">KISA “최정예 사이버보안 인력 프로그램(K-Shield) 과정 이수자</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">KUCIS(대학정보보호동아리) 활동 경력</td>
+			<td style="text-align: center;">16점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">기타 사이버 관련 교육 1개 과정 또는 50시간 이상 이수자</td>
+			<td style="text-align: center;">12점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">8점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+			<th colspan="2" scope="col">2년</th>
+			<th colspan="2" scope="col">1년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2" scope="row">대학교</th>
+			<td>50</td>
+			<td>48</td>
+			<td>45</td>
+			<td>43</td>
+			<td>40</td>
+			<td>38</td>
+			<td>35</td>
+			<td>33</td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">전문대</th>
+			<td><strong>3년제</strong></td>
+			<td></td>
+			<td></td>
+			<td>48</td>
+			<td>45</td>
+			<td>43</td>
+			<td>40</td>
+			<td>38</td>
+			<td>35</td>
+		</tr>
+		<tr>
+			<td><strong>2년제</strong></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>45</td>
+			<td>43</td>
+			<td>40</td>
+			<td>38</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">고졸/ 비전공</th>
+			<td colspan="8">&nbsp; 고졸(전공) : 43점 /&nbsp; 비전공 : 30점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>CBT병 지원자격 세부내역</h4>
+
+<div class="table_scroll">
+<table class="table_col">
+	<colgroup>
+		<col class="width_10p">
+		<col class="width_90p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">자격증</td>
+			<td>DIAT(프레젠테이션) 상급, ITQ(한글, 한쇼) A등급, GTA 1급, &nbsp;GTQ 1급 이상,&nbsp;<br>
+			DIAT(프레젠테이션) 중급,&nbsp;&nbsp;ITQ(한글, 한쇼) B등급, GTA 2급, 기계설계산업기사,<br>
+			게임그래픽전문가, 전산응용기계제도기능사, 3차원그래픽 자격증(2급이상, PMC), 멀티미디어<br>
+			콘텐츠제작전문가, &nbsp;웹디자인기능사, 컴퓨터그래픽스운용기능사, 영사산업기사<br>
+			ICT 역량지수 (TOPCIT) 정기평가 300점 이상 획득자, 광학기기산업기사, 사진기능사, 영사기능사,<br>
+			어도비ACE/ACA 국제공인자격증, 유니티 공인 인증시험, BMI 운용전문가, 디지털영상편집 1/2급</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">전공</td>
+			<td>그래픽, 디자인, 게임, 만화, 미술, 시각 디자인 관련학과<br>
+			&nbsp;게임애니메이션, 기계CAD/기계설계, 컴퓨터공학, 컴퓨터과학, 소프트웨어학 등 개발관련학과<br>
+			교육공학, 교육학과, 교육학 계열 학과 전문대이상, 영상 관련 학과 대학교 재학 또는 졸업자/고등학교 졸업 예정자</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">경력</td>
+			<td>그래픽, 디자인 관련 기업, 3D그래픽 게임개발 관련 법인 기업, 교육콘텐츠 업체, 영상 관련 법인기업에서 프로그램 개발 프로젝트 또는 실무경력이 있는 자</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>CBT병 세부배점 내역</h4>
+
+<div class="layout_h5">
+<h5>자격증</h5>
+
+<div class="table_scroll">
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">DIAT(프레젠테이션) 상급, ITQ(한글, 한쇼) A등급,&nbsp;&nbsp;GTA 1급, 기계설계산업기사, 광학기기산업기사,&nbsp;<br>
+			영사산업기사,&nbsp;BMI 운용전문가 1급, 유니티 공인 인증시험(Professional, Expert)</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">DIAT(프레젠테이션) 중급, ITQ(한글, 한쇼) B등급,&nbsp;GTA 2급, 게임그래픽전문가, 전산응용기계제도기능사,<br>
+			멀티미디어 콘텐츠제작전문가, 웹디자인기능사, 컴퓨터그래픽스운용기능사,&nbsp;&nbsp;사진기능사, 영사기능사,<br>
+			ICT 역량지수(TOPCIT) 정기평가 300점 이상 획득자, BMI 운용전문가 2급, 디지털영상편집 1급,<br>
+			유니티 공인 인증시험(Associate)</td>
+			<td style="text-align: center;">25점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3차원 그래픽 자격증(2급이상, PMC), GTQ 1급 이상, 어도비 ACE/ACA 국제공인자격증<br>
+			디지털영상편집 2급, 유니티 공인 인증시험(User)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h5">
+<h5>경력</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">지원자격에 적합한 기업&nbsp;중 2년 이상 근무한 자</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">지원자격에 적합한 기업&nbsp;중 1년 이상 근무한 자</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">지원자격에 적합한 기업&nbsp;중 1년 이하 근무한 자</td>
+			<td style="text-align: center;">10점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+			<th colspan="2" scope="col">2년</th>
+			<th colspan="2" scope="col">1년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2" scope="row">대학교</th>
+			<td>40</td>
+			<td>38</td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+			<td>28</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">전문대</th>
+			<td><strong>3년제</strong></td>
+			<td></td>
+			<td></td>
+			<td>38</td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td><strong>2년제</strong></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">고졸/ 비전공</th>
+			<td colspan="8">&nbsp; 고졸(전공) : 34점 /&nbsp; 비전공 : 24점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>S/W개발병 세부배점 내역</h4>
+
+<div class="layout_h5">
+<h5>자격</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">기사 자격증</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">산업기사 자격증</td>
+			<td style="text-align: center;">25점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">기능사 자격증</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>경력</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">S/W개발 경험 2년 이상</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">S/W개발 경험&nbsp;1년 이상 ~ 2년 미만</td>
+			<td style="text-align: center;">25점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">S/W개발 경험 1년 미만</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+			<th colspan="2" scope="col">2년</th>
+			<th colspan="2" scope="col">1년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2" scope="row">대학교</th>
+			<td>40</td>
+			<td>38</td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+			<td>28</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">전문대</th>
+			<td><strong>3년제</strong></td>
+			<td></td>
+			<td></td>
+			<td>38</td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td><strong>2년제</strong></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>36</td>
+			<td>34</td>
+			<td>32</td>
+			<td>30</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">고졸/ 비전공</th>
+			<td colspan="8">&nbsp; 고졸(전공) : 34점 /&nbsp; 비전공 : 24점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>신기술융합연구병</h4>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_100p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">- 기계(분류) 학과<br>
+			기계공학과, 기계설계공학과, 기계시스템디자인공학과, 기계시스템학과,<br>
+			에너지기계공학과, 로봇공학과, 메카트로닉스공학과, 광메카트로닉스공학과,<br>
+			나노메카트로닉스공학과<br>
+			- 화학(분류) 학과<br>
+			화학공학과, 신소재공학과, 신소재화공시스템공학과, 정보전자신소재공학과,<br>
+			융합에너지신소재공학과, 화공신소재공학과, 나노신소재공학과,<br>
+			나노소재전공, 바이오시스템소재공학과, 미래에너지공학과,<br>
+			고분자공학과, 응용화학공학과, 청정융합에너지공학과<br>
+			- IT(분류) 학과<br>
+			컴퓨터공학과, 컴퓨터소프트웨어학과, 컴퓨터과학과, 컴퓨터전자시스템공학과,<br>
+			빅데이터경영통계전공, 데이터통계학과, 정보컴퓨터공학과, 인공지능학과,<br>
+			소프트웨어학과, 데이터사이언스학과, 전자전기공학과, 전자전기컴퓨터공학과,<br>
+			사이버국방학과, 국방정보공학과, 해양융합과학·공학과, 모바일시스템공학과,<br>
+			경영정보학과, 임베디드시스템공학과, 휴먼지능정보학과, 정보보안학과</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>자격</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">로봇기구개발기사, 로봇소프트웨어개발기사, 로봇하드웨어개발기사,<br>
+			금속재료기사, 신재생에너지발전설비기사, 정보처리기사, 정보보안기사,<br>
+			ICT 역량지수(TOPCIT) 정기평가 400점 이상 획득자,<br>
+			리눅스마스터 1급, 데이터분석전문가(ADP), 빅데이터분석기사<br>
+			IT 국제공인자격증(MCSE, OCM, CISSP, OCNA)</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">금속재료산업기사, 신재생에너지발전설비산업기사, 정보처리산업기사,<br>
+			정보보안산업기사, 리눅스마스터 2급, 데이터분석준전문가(ADSP),<br>
+			IT 국제공인자격증(LPIC, MCSA, OCP, CISA, OCSA)</td>
+			<td style="text-align: center;">25점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">&nbsp;IT 국제공인자격증(OCJP, OCA)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">15점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="row">구분</th>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">대학교</th>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">35</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">25</td>
+		</tr>
+		<tr>
+			<th scope="row">전문대(3년제)</th>
+			<td></td>
+			<td></td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">25</td>
+		</tr>
+		<tr>
+			<th scope="row">대학원(석사)</th>
+			<td colspan="4">&nbsp; 수료 50점 / 재학 45점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>경력</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">&nbsp;IoT, 무인로봇, 인공지능, 빅데이터&nbsp;등 4차산업혁명 관련 시스템 개발 프로젝트 또는 실무경력이 있는 사람(1년 이상)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">&nbsp;IoT, 무인로봇, 인공지능, 빅데이터&nbsp;등 4차산업혁명 관련 시스템 개발 프로젝트 또는 실무경력이 있는 사람(3개월 이상)</td>
+			<td style="text-align: center;">15점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">10점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>빅데이터분석병 세부배점 내역</h4>
+
+<div class="layout_h5">
+<h5>자격증</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">ICT 역량지수(TOPCIT) 정기평가 400점 이상 획득자, 데이터아키텍처 전문가(DAP, Data Architecture Professional), SQL(Structured Query Language) 전문가, 데이터분석전문가(ADP), IT국제공인자격증(MCSE, OCM, CISSP, OCNA), 정보처리기사, 리눅스마스터 1급</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">데이터아키텍처 준전문가(DAsP, Data Architecture Semi-Professional), SQL(Structured Query Language) 개발자, 데이터분석 준전문가(ADsP), IT국제공인자격증(LPIC, MCSA, OCP, CISA, OCSA), 정보처리산업기사, 리눅스마스터 2급</td>
+			<td style="text-align: center;">25점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">정보처리기능사, IT국제공인자격증(OCJP, OCA)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">15점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="2" scope="row">구분</th>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">대학교</th>
+			<td style="text-align: center;">40</td>
+			<td style="text-align: center;">35</td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">25</td>
+		</tr>
+		<tr>
+			<th scope="row">전문대(3년제)</th>
+			<td></td>
+			<td></td>
+			<td style="text-align: center;">30</td>
+			<td style="text-align: center;">25</td>
+		</tr>
+		<tr>
+			<th scope="row">대학원(석사)</th>
+			<td colspan="4">&nbsp; 수료 50점 / 재학 45점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>경력</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능, IoT 등 4차산업혁명 관련 시스템 개발 프로젝트 또는<br>
+			실무경력이 있는 사람(1년 이상)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능, IoT 등 4차산업혁명 관련 시스템 개발 프로젝트 또는<br>
+			실무경력이 있는 사람(3개월 이상)</td>
+			<td style="text-align: center;">15점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">미보유</td>
+			<td style="text-align: center;">10점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+&nbsp;
+
+<div class="layout_h4">
+<h4>전문의무병 세부배점 내역</h4>
+
+<div class="layout_h5">
+<h5>경력(개인병원 이상 임상 근무 경력/ 학교실습제외)</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">1년 이상</td>
+			<td style="text-align: center;">80점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">6월 이상 ~ 1년 미만</td>
+			<td style="text-align: center;">75점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3월 이상 ~ 6월 미만</td>
+			<td style="text-align: center;">70점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">3월 미만</td>
+			<td style="text-align: center;">65점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">없음</td>
+			<td style="text-align: center;">60점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>출결</h5>
+
+<table class="table_row">
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구분</td>
+			<td style="text-align: center;">결석 0일</td>
+			<td style="text-align: center;">결석 1~2일</td>
+			<td style="text-align: center;">결석 3~5일</td>
+			<td style="text-align: center;">결석 6일이상</td>
+			<td style="text-align: center;">비 고</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">점수</td>
+			<td style="text-align: center;">20</td>
+			<td style="text-align: center;">17</td>
+			<td style="text-align: center;">14</td>
+			<td style="text-align: center;">11</td>
+			<td style="text-align: center;">고교3년간 누계 적용</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+&nbsp;
+
+<div class="layout_h4">
+<h4>지식재산관리병 세부배점</h4>
+
+<div class="layout_h5">
+<h5>자격</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">변리사 자격증 소지자(최종시험 합격자 포함)</td>
+			<td style="text-align: center;">15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><span style="color: rgb(0, 0, 255);">관련분야 1년 이상 근무경력자</span></td>
+			<td style="text-align: center;"><span style="color: rgb(0, 0, 255);">10</span></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">지식재산 능력시험(IPAT) 1급 소지자</td>
+			<td style="text-align: center;">10</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">지식재산 능력시험(IPAT) 2급 또는 3급&nbsp;소지자</td>
+			<td style="text-align: center;">8</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;"><span style="color: rgb(0, 0, 255);">지식재산권(특허/실용신안) 1건 이상 단독출원<br>
+			및 등록자 (법정대리인 제외)</span></td>
+			<td style="text-align: center;"><span style="color: rgb(0, 0, 255);">6</span></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+&nbsp;
+
+<div class="layout_h5">
+<h5>전공</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th colspan="2" rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+			<th colspan="2" scope="col">2년</th>
+			<th colspan="2" scope="col">1년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th colspan="2" rowspan="1" scope="row">대학교</th>
+			<td>85</td>
+			<td>84</td>
+			<td>83</td>
+			<td>82</td>
+			<td>81</td>
+			<td>80</td>
+			<td>80</td>
+			<td>80</td>
+		</tr>
+		<tr>
+			<th rowspan="2" scope="row">전문대</th>
+			<td><strong>3년제</strong></td>
+			<td></td>
+			<td></td>
+			<td>83</td>
+			<td>82</td>
+			<td>81</td>
+			<td>80</td>
+			<td>80</td>
+			<td>80</td>
+		</tr>
+		<tr>
+			<td><strong>2년제</strong></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>81</td>
+			<td>80</td>
+			<td>80</td>
+			<td>80</td>
+		</tr>
+		<tr>
+			<th colspan="2" scope="row">고졸/ 비전공</th>
+			<td colspan="8">&nbsp;&nbsp;79점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="layout_h4">
+<h4>인공지능(AI)개발특기병 세부 배점(서류 100)</h4>
+
+<div class="layout_h5">
+<h5>자격(20)</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">파이썬마스터 1급, 빅데이터분석기사, 데이터분석전문가, SQL전문가, ICT 역량지수(TOPCIT)정기평가 400점 이상 획득자</td>
+			<td style="text-align: center;">20</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">데이터분석 준전문가, SQL개발자, IT국제공인 자격증(OCP, OCM)</td>
+			<td style="text-align: center;">15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">보유 없음</td>
+			<td style="text-align: center;">10</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>경력(40)</h5>
+
+<table class="table_col">
+	<colgroup>
+		<col class="width_80p">
+		<col class="width_20p">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">구 분</td>
+			<td style="text-align: center;">배 점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능 개발 프로젝트 및 실무경력이 있는 자(3년 이상)</td>
+			<td style="text-align: center;">40점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능 개발 프로젝트 및 실무경력이 있는 자(2~3년 미만)</td>
+			<td style="text-align: center;">35점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능 개발 프로젝트 및 실무경력이 있는 자(1~2년 미만)</td>
+			<td style="text-align: center;">30점</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">빅데이터, 인공지능 개발 프로젝트 및 실무경력이 있는 자(1년 미만)</td>
+			<td style="text-align: center;">20점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h5">
+<h5>전공(40)</h5>
+
+<table class="table_col">
+	<thead>
+		<tr>
+			<th rowspan="3" scope="row">구분</th>
+			<th colspan="8" scope="col">전공</th>
+		</tr>
+		<tr>
+			<th colspan="2" scope="col">4년</th>
+			<th colspan="2" scope="col">3년</th>
+		</tr>
+		<tr>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+			<th scope="col">수료</th>
+			<th scope="col">재학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">대학교</th>
+			<td>32</td>
+			<td>28</td>
+			<td>24</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<th scope="row">전문대</th>
+			<td></td>
+			<td></td>
+			<td>24</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<th scope="row">대학원(석사)</th>
+			<td colspan="4">&nbsp; 수료 40점 / 재학 36점</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>"""
