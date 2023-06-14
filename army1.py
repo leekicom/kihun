@@ -96,6 +96,16 @@ def sogae_query(b):
                 data = query.fetchall(), 
                 columns = cols
             )  
+    return results_df  
+def jmtg_query(b):
+    query = "select 내용 from 전문특기 where 전문특기='"+b+"'"
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
     return results_df    
 def gun_query():
     query = "select * from 군사특기별현황"
@@ -465,11 +475,20 @@ def army_gunsa():
         with col4:
             st.text('간접관련 군사특기입니다.')
             st.dataframe(txt6,width=300)
-
+def jmtg():
+    st.header("전문특기병 안내")
+    df1=gun1_query("전문특기")    
+    test1=st.selectbox('전문특기를 선택하세요',df1['전문특기'].drop_duplicates(keep='first'),0)
+    txt1=''.join(test1)
+    st.text(txt1)
+    code1_txt1=jmtg_query(txt1)
+    txt2=''.join(code1_txt1['내용'])
+    st.markdown(txt2, unsafe_allow_html=True)
 page_names_to_funcs = {
     "군사특기 추천": army_gunsa,
     "군사특기별 현황": army_hh,
-    "수송운용(차량운전) 현황": susong,    
+    "수송운용(차량운전) 현황": susong,
+    "전문특기병 안내": jmtg,    
     "나의점수 알아보기": army_jeomsu,
 }
 
