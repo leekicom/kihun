@@ -14,7 +14,8 @@ dashboards = {
     "공군": os.path.join(root, "airforce.py"),
     "해병대": os.path.join(root, "marine.py"),
     "모집계획": os.path.join(root, "mjgh.py"),
-    "Database": os.path.join(root, "datatest.py")
+    "Database": os.path.join(root, "datatest.py"),
+    "테스트": os.path.join(root, "test.py")
 }
 
 choice_from_url = query_params = st.experimental_get_query_params().get("육군", ["육군"])[0]
