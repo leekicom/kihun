@@ -10,16 +10,16 @@ def create_connection(db_file):
     except Exception as e:
         st.write(e)
     return conn
+
 def gun1_query(t):
-    query = "select * from "+t+""
+    query = "SELECT * FROM " + t
     conn = create_connection("mydatabase.db")
-    query = conn.execute(query)
-    cols = [column[0] for column in query.description]
-    results_df= pd.DataFrame.from_records(
-                data = query.fetchall(), 
-                columns = cols
-            )  
-    return results_df 
+    query_result = conn.execute(query)
+    cols = [column[0] for column in query_result.description]
+    results_df = pd.DataFrame.from_records(data=query_result.fetchall(), columns=cols)
+    conn.close()
+    return results_df
+
 def gstg1(txt1,txt2,txt3,txt4):
     query = "select distinct b.군사특기 from "+txt1+" a,직간접 b where a.군구분='"+txt2+"' and b.군별='"+txt2+"' and a.검사구분코드=b.관련분야코드 and b.직간접구분='"+txt3+"' and a.검사지침코드명='"+txt4+"'"
     conn = create_connection("mydatabase.db")

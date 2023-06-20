@@ -1,41 +1,43 @@
 import sqlite3
 import streamlit as st
 import mod2
+import pandas as pd
+import altair as alt
+def mjgh():
+    df1=mod2.gun1_query('모집계획')
+    st.header('군별 모집계획')
+    test1=st.selectbox('구분',df1['구분'].drop_duplicates(keep='first'),0)
+    st.subheader(test1)
+    df2=df1.query("구분=='"+test1+"'")
+    result=df2[['모집회차','입영월','지원서접수','1차발표','신검/면접','최종발표']]
+    result.set_index(['모집회차'],inplace=True)
+    st.dataframe(result)
+def mjhh():
+    st.header("모집현황")
+    df1 = mod2.gun1_query('hh1')
+    test1 = st.selectbox('군을 선택하세요', df1['군별'].drop_duplicates(keep='first'), 0)
+    df2 = df1.query("군별 == '" + test1 + "'")
+    test2 = st.selectbox('군사특기를 선택하세요', df2['군사특기명'].drop_duplicates(keep='first'), 0)
+    df3 = df2.query("군사특기명 == '" + test2 + "'")
 
-df1=mod2.gun1_query('모집계획')
-st.header('군별 모집계획')
-test1=st.selectbox('구분',df1['구분'].drop_duplicates(keep='first'),0)
-st.subheader(test1)
-df2=df1.query("구분=='"+test1+"'")
-result=df2[['모집회차','입영월','지원서접수','1차발표','신검/면접','최종발표']]
-result.set_index(['모집회차'],inplace=True)
-st.dataframe(result)
-    # df3=code_df.query("소분류=='"+test1+"'")
-    # result3=df3['대분류'].values
-    # result4=df3['코드'].values
-    # txt3=''.join(result3)
-    # txt4=''.join(result4)
-    # st.text("대분류:"+txt3)
-    # df2=df1.query("특기=='"+txt3+"'")
+    result1 = df3[['입영월', '접수인원', '지원인원', '커트라인']]
+    result2 = result1.melt(id_vars='입영월', var_name='구분', value_name='인원/점수')
+    result1.set_index('입영월', inplace=True)  # '입영월'을 인덱스로 설정
+    st.dataframe(result1)
 
-    # restult1=df2[['입영월','커트라인','선발인원']]
-    # restult2=restult1.melt('입영월', var_name='구분', value_name='인원/점수')
-    # restult1.set_index(['입영월'],inplace=True)
-    # rst1=restult1.transpose()
-    # st.dataframe(rst1)
-    # c = alt.Chart(pd.DataFrame(restult2)).mark_line(point=True).encode(
-    #     alt.Y('인원/점수:Q'),
-    #     x='입영월:N',
-    #     color='구분:N'
-    # ).interactive()
-    # st.altair_chart(c.interactive(),
-    #     use_container_width=True)
-    
-    # code1_txt1=mod2.sogae_query(txt4)
-    # mod2_html=''.join(code1_txt1['Column2'].values)
-    # try:
-    #     image = Image.open('image/'+txt4+'.jpeg')
-    # except: 
-    #     image = Image.open('image/'+txt4+'.gif')    
-    # st.image(image, caption=txt4)
-    # st.markdown(mod2_html, unsafe_allow_html=True)  
+    c = alt.Chart(pd.DataFrame(result2)).mark_line(point=True).encode(
+        alt.Y('인원/점수:Q'),
+        x='입영월:N',
+        color='구분:N'
+    ).interactive()
+    st.altair_chart(c.interactive(), use_container_width=True)
+
+
+
+page_names_to_funcs = {
+    "모집계획": mjgh,
+    "모집현황": mjhh,
+}
+
+selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
