@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 from PIL import Image
@@ -16,6 +17,8 @@ st.markdown("# Upload Data")
 table_name = st.text_input('Table Name to Insert')
 conn = create_connection("mydatabase.db")
 uploaded_file = st.file_uploader('Choose a file')
+
+
 if uploaded_file is not None:
     try:
         data = pd.read_excel(uploaded_file, sheet_name='기술병')

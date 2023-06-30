@@ -1,4 +1,5 @@
 import sqlite3
+import base64
 import streamlit as st
 import mod2
 import pandas as pd
@@ -33,10 +34,17 @@ def mjhh():
     st.altair_chart(c.interactive(), use_container_width=True)
 
 
-
+def show_pdf(file_path):
+    with open(file_path,"rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+    st.markdown(pdf_display, unsafe_allow_html=True)
+def yg_jmtg():
+    show_pdf('jmtg.pdf')
 page_names_to_funcs = {
     "모집계획": mjgh,
     "모집현황": mjhh,
+    "육군전문특기": yg_jmtg,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
