@@ -28,7 +28,7 @@ path = dashboards[choice]
 with open(path, encoding="utf-8") as code:
     c = code.read()
     exec(c, globals())
-
+    st.markdown(''':red[Update date : 2023.11.16]''')
 #     with st.expander('Code for this example:'):
 #         st.markdown(f"""``` python
 # {c}```""")
