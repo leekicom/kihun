@@ -15,7 +15,7 @@ def mjgh():
     st.dataframe(result)
 def mjhh():
     st.header("모집현황")
-    df1 = mod2.gun1_query('hh1')
+    df1 = mod2.gun1_query('hh2')
     test1 = st.selectbox('군을 선택하세요', df1['군별'].drop_duplicates(keep='first'), 0)
     df2 = df1.query("군별 == '" + test1 + "'")
     test2 = st.selectbox('군사특기를 선택하세요', df2['군사특기명'].drop_duplicates(keep='first'), 0)

@@ -127,6 +127,28 @@ def gun1_query(t):
                 columns = cols
             )  
     return results_df    
+def run_queryq(a1):
+
+    query = "select 입영월,접수인원,지원인원,커트라인 from hh2 where 군사특기명='"+a1+"' "
+    conn = create_connection("mydatabase.db")
+
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_df= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )
+    restult1=results_df.melt('입영월', var_name='구분', value_name='인원/점수')
+    results_df.set_index(['입영월'],inplace=True)
+    rst=results_df.transpose()
+    st.dataframe(rst)
+    c = alt.Chart(pd.DataFrame(restult1)).mark_line(point=True).encode(
+        alt.Y('인원/점수:Q'),
+        x='입영월:N',
+        color='구분:N'
+    ).interactive()
+    st.altair_chart(c.interactive(),
+    use_container_width=True)
 def run_query(a1):
 
     query = "select 입영월,접수인원,지원인원,커트라인 from 군사특기별현황 where 군사특기명='"+a1+"' and 입영부대='육군훈련소'"
@@ -349,7 +371,7 @@ def army_jeomsu():
                 st.subheader(test1)
                 mod1_html=mod1.html6
                 st.markdown(mod1_html, unsafe_allow_html=True)
-                run_query(test1)
+                run_queryq(test1)
 def susong():
     df1=gunsa2_query()
     df2=df1.drop(['접수인원', '지원인원'], axis=1)
