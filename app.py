@@ -6,7 +6,7 @@ st.set_page_config(
   page_icon="😆",
   page_title="대구병역진로설계지원센터",
 )
-st.sidebar.markdown(''':blue[한눈에 보는 모집병 지원정보]''')
+st.sidebar.header(''':blue[한눈에 보는 모집병 지원정보]''')
 st.sidebar.markdown(''':red[Update date : 2023.11.16]''')
 root = os.path.join(os.path.dirname(__file__))
 
