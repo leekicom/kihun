@@ -24,7 +24,7 @@ index = list(dashboards.keys()).index(choice_from_url)
 choice = st.sidebar.radio("한눈에 보는 모집병 지원정보", list(dashboards.keys()), index=index)
 
 path = dashboards[choice]
-
+st.sidebar.markdown('''안녕''')
 with open(path, encoding="utf-8") as code:
     c = code.read()
     exec(c, globals())
