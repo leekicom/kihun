@@ -6,7 +6,8 @@ st.set_page_config(
   page_icon="😆",
   page_title="대구병역진로설계지원센터",
 )
-st.sidebar.markdown('''한눈에 보는 모집병 지원정보''')
+st.sidebar.markdown(''':blue[한눈에 보는 모집병 지원정보]''')
+st.sidebar.markdown(''':red[Update date : 2023.11.16]''')
 root = os.path.join(os.path.dirname(__file__))
 
 dashboards = {
@@ -29,7 +30,7 @@ path = dashboards[choice]
 with open(path, encoding="utf-8") as code:
     c = code.read()
     exec(c, globals())
-    st.markdown(''':red[Update date : 2023.11.16]''')
+
 #     with st.expander('Code for this example:'):
 #         st.markdown(f"""``` python
 # {c}```""")
