@@ -21,9 +21,9 @@ dashboards = {
 choice_from_url = query_params = st.experimental_get_query_params().get("육군", ["육군"])[0]
 index = list(dashboards.keys()).index(choice_from_url)
 
-choice = st.sidebar.radio("군을 선택하세요!!!", list(dashboards.keys()), index=index)
+choice = st.sidebar.radio("red[한눈에 보는 모집병 지원정보]\N군을 선택하세요!!!", list(dashboards.keys()), index=index)
 
-path = dashboards[choice,''':red[Update date : 2023.11.16]''']
+path = dashboards[choice]
 
 with open(path, encoding="utf-8") as code:
     c = code.read()
