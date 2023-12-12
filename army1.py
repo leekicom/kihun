@@ -514,5 +514,5 @@ page_names_to_funcs = {
     "나의점수 알아보기": army_jeomsu,
 }
 
-selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
+selected_page = st.sidebar.selectbox("원하시는 메뉴를 선택하세요!", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
