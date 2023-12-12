@@ -6,6 +6,7 @@ st.set_page_config(
   page_icon="😆",
   page_title="대구병역진로설계지원센터",
 )
+st.sidebar.markdown('''한눈에 보는 모집병 지원정보''')
 root = os.path.join(os.path.dirname(__file__))
 
 dashboards = {
@@ -21,10 +22,10 @@ dashboards = {
 choice_from_url = query_params = st.experimental_get_query_params().get("육군", ["육군"])[0]
 index = list(dashboards.keys()).index(choice_from_url)
 
-choice = st.sidebar.radio("한눈에 보는 모집병 지원정보", list(dashboards.keys()), index=index)
+choice = st.sidebar.radio("군을 선택하세요!", list(dashboards.keys()), index=index)
 
 path = dashboards[choice]
-st.sidebar.markdown('''안녕''')
+
 with open(path, encoding="utf-8") as code:
     c = code.read()
     exec(c, globals())
