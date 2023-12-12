@@ -23,7 +23,7 @@ index = list(dashboards.keys()).index(choice_from_url)
 
 choice = st.sidebar.radio("군을 선택하세요!!!", list(dashboards.keys()), index=index)
 
-path = dashboards[choice]
+path = dashboards[choice,''':red[Update date : 2023.11.16]''']
 
 with open(path, encoding="utf-8") as code:
     c = code.read()
