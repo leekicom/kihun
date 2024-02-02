@@ -45,7 +45,7 @@ def emp_hg():
     st.markdown(mod2_html, unsafe_allow_html=True)
 
 page_names_to_funcs = {
-    "취업맞춤특기병 지원가능 확과":emp_hg,
+    "취업맞춤특기병 지원가능 학과":emp_hg,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
