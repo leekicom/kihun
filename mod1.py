@@ -11962,3 +11962,261 @@ html62="""<div class="layout_h3">
 </div>
 </div>
 </div>"""
+html63="""<div id="contents">
+	                            <!-- 컨탠츠 페이지 시작 -->
+	                            <div class="tab_top">
+<ul>
+	<li class="on"><a href="/contents.do?mc=mma0000386">육군</a></li>
+	<li><a href="/contents.do?mc=mma0000537">해군</a></li>
+	<li><a href="/contents.do?mc=mma0000458">해병대</a></li>
+	<li class="border_right"><a href="/contents.do?mc=mma0000465">공군</a></li>
+</ul>
+</div>
+
+<div class="tab_text1">
+<ul>
+	<li><a href="/contents.do?mc=mma0000386">기술행정병</a></li>
+	<!--li><a href="/contents.do?mc=mma0000428">최전방수호병</a></li-->
+	<li class="on"><a href="/contents.do?mc=mma0000432">취업맞춤특기병</a></li>
+	<li><a href="/contents.do?mc=mma0000505">임기제부사관</a></li>
+	<li><a href="/contents.do?mc=mma0000487">전문특기병</a></li>
+	<li><a href="/contents.do?mc=mma0000522">어학병</a></li>
+	<li><a href="/contents.do?mc=mma0000525">카투사</a></li>
+	<li><a href="/contents.do?mc=mma0000531">동반입대병</a></li>
+	<!--	<li><a href="/contents.do?mc=mma0000528">동반입대병(다문화)</a></li> -->
+	<li><a href="/contents.do?mc=mma0000533">직계가족복무부대병</a></li>
+	<li><a href="/contents.do?mc=mma0000535">연고지복무병</a></li>
+</ul>
+</div>
+
+<div class="tab_01">
+<ul>
+	<li><a href="/contents.do?mc=mma0000432">모집개요</a></li>
+	<li class="on"><a href="/contents.do?mc=mma0000433">모집안내</a></li>
+	<li><a href="/conscription/recruit_service/procedure/army/C_board_text.do?mc=mma0000434&amp;gun_gbcd=1&amp;mojip_gbcd=C">군사특기임무 및 설명</a></li>
+	<li><a href="/contents.do?mc=mma0000435">지원절차</a></li>
+	<li><a href="/contents.do?mc=mma0000436">문의처</a></li>
+</ul>
+</div>
+
+<h3>모집안내-지원자격</h3>
+
+<table class="table_row">
+	<caption>모집안내-지원자격에 관한표이며 연령, 학력, 신체, 기술훈련, 선발제외대상에 관한내용을 제공</caption>
+	<colgroup>
+		<col class="width_20p">
+		<col class="width_auto">
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row">연령</th>
+			<td>지원서 접수년도 기준 18세이상 24세이하 ('24년 기준 : '00.1.1 ~ '06.12.31 출생자)</td>
+		</tr>
+		<tr>
+			<th scope="row">학력</th>
+			<td>
+			<ul class="list">
+				<li>고등학교 졸업이하 학력소지 또는 교육부장관이 인정하는 동등 학력을 소지한 사람
+				<ul>
+					<li>고교 재학 중인 사람은 지원 제한, 다만 상급학교를 진학하지 아니한 경우는 졸업 하는 해 1월 1일부터 지원 가능, 대학중퇴자는 지원 가능&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 0, 205);">&nbsp;&nbsp;</span>&nbsp;</li>
+				</ul>
+				</li>
+			</ul>
+			&nbsp;<br>
+			&nbsp; * 학점은행제를 통한 전문학사 학위취득자 및 폴리텍대학, 전문대, 사이버대, 방통대&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 재학ㆍ졸업자&nbsp;지원 가능&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			&nbsp;&nbsp;* 기초생활수급자, 차상위계층, 한부모가족지원대상은 대학졸업(예정)자도 참여 가능</td>
+		</tr>
+		<tr>
+			<th scope="row">신체</th>
+			<td>
+			<div class="layout_h5">
+			<h3><span style="color: rgb(105, 105, 105);"><span style="font-size: 14px;">병역판정검사 결과 신체등급&nbsp;1∼4급자로서 현역병 입영대상인 사람</span></span></h3>
+			</div>
+
+			<ul class="list">
+				<li>모집특기별 신체제한 사항의 사유에 해당되지 아니한 사람
+				<ul>
+					<li>병역판정(지원)검사를 받지 아니한 사람은 신체검사 별도 실시</li>
+					<li>다만, 18세자는 18세에 입영하게 될 경우&nbsp;18세에 현역병지원 병역판정검사를 실시(신체등급&nbsp;5~6급자는 전시근로역&nbsp;또는 병역면제 인정), 19세 이후에 입영하게 될 경우는 18세 병역판정검사를 보류하고 19세에 가급적 빠른 일자를 정하여 병역판정검사 실시</li>
+				</ul>
+				</li>
+			</ul>
+
+			<div></div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">기술훈련</th>
+			<td>
+			<p>기술훈련에 처음 참여하는 사람은 취업맞춤특기병에 지원하면 고용노동부 국민취업지원제도에 참여하여 본인 적성에 맞는 훈련을 받게 됩니다. 이때 취업맞춤특기병을 먼저 지원하지 않았더라도 이미 기술훈련(*아래 훈련과정 해당)을 받고 있거나 마친 사람의 경우도 훈련을 수료하면 취업맞춤특기병에 지원이 가능합니다.</p>
+
+			<p>&nbsp;*&nbsp;훈련과정: 국가기간·전략산업직종훈련, 중소기업친화직종훈련, 국가인적자원개발컨소시엄 채용예정훈련, 폴리텍 기능사양성과정 훈련, 내일배움카드제 훈련 중 일부, 일학습병행제, 내일이룸학교 등 국가기관 또는 지방자치단체에서 주관하는 직업훈련 과정</p>
+
+			<ul>
+				<li><strong>기술훈련 참여 희망자 : </strong>지원 → 상담 → 훈련 → 취업 또는 입영</li>
+				<li><strong>기술훈련 참여 중인 자 : </strong>지원 → 훈련 → 취업 또는 입영</li>
+				<li><strong>기술훈련 수료자 :</strong> 지원 → 취업 또는 입영</li>
+			</ul>
+			<br>
+			* 직업계고(마이스터고, 특성화고, 일반고 직업계열) 학생은 기술훈련을 받지&nbsp;않아도 전공학과 분야로 지원 가능합니다.(단, 육군 23개 특기에 한함)
+			<dl>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span style="font-size: 12px;">선발제외대상</span></th>
+			<td>
+			<div class="layout_h5">
+			<h3><span style="color: rgb(105, 105, 105);"><span style="font-size: 14px;">아래 사항에 해당되는 경우에는 취업맞춤특기병 선발을 제외</span></span></h3>
+
+			<ul class="list">
+				<li>정해진 기한 내 상담 및 기술훈련 등을 받지 아니한 경우
+				<ul>
+					<li>연락 두절 또는 고의적으로 상담을 회피하는 등으로 상담이 곤란한 경우</li>
+					<li>지원서 접수 후 지방병무청 전문상담관을 대면하여 상담, 지원확인서 발급일로부터 1월이내 고용센터 전문상담원을 방문상담 하여야 함</li>
+					<li>지원서 접수일로 부터 6월을 초과하였음에도 기술훈련이 시작되지 않고 있으며, 기술훈련을 받고자 하는 의사가 없거나 고의적으로 지연시키는 경우</li>
+				</ul>
+				</li>
+				<li>범죄경력 조회결과 아래 사항에 해당되는 사람
+				<ul>
+					<li>징역 또는 금고의 형의 실형(집행유예 포함)을 선고받은 사람</li>
+					<li>수사·재판 중에 있거나 처분미상으로 통보된 사람으로서 기술훈련 시작일 까지 수사종결처분·결정 또는 재판이 확정되지 아니하였거나 처분결과가 판명되지 아니한 사람</li>
+				</ul>
+				</li>
+				<li>지원서를 허위로 작성하거나 제출서류가 허위 또는 위조로 확인된 사람</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;※ 「 대체역의 편입 및 복무 등에 관한 법률 」 에 따라 대체역 편입원을 제출한 사람은 지원을 제한합니다.<br>
+<br>
+취업맞춤특기병 모집특기 목록 <span class="button down white2 ml10px"><a href="/cmfileDown.do?gtfile_no=184">다운로드</a><a href="/cmfileView.do?gtfile_no=184" target="_blank">미리보기</a></span><br>
+<br>
+&nbsp;</p>
+
+<div class="layout_h3">
+<h3>지원서 접수</h3>
+
+<table class="table_row">
+	<caption>지원서 접수에 관한표이며 접수기간, 접수처, 참고사항에 대한내용을 제공</caption>
+	<colgroup>
+		<col class="width_20p">
+		<col class="width_auto">
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row">접수기간</th>
+			<td>1월 ~ 12월</td>
+		</tr>
+		<tr>
+			<th scope="row">접수처</th>
+			<td>
+			<dl class="list">
+				<dt>인터넷 접수 :</dt>
+				<dd>병무청 홈페이지→ 병무민원포털 → 군지원→ 지원서작성 및 수정취소 → 취업맞춤특기병 모집</dd>
+				<dt>서면(방문) 접수 :</dt>
+				<dd>지방병무청 군지원센터(병역진로설계지원센터)</dd>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">참고사항</th>
+			<td>
+			<ul class="list">
+				<li>지원자는 지원서 작성 시 원하는 기술훈련·군복무 희망분야 등을 기재</li>
+				<li>지원 시 선택한 입영시기·부대·특기 등은 입영하는 해 입영계획에 따라 변경될 수 있음을 유의</li>
+				<li>현역병(징집병) 입영일이 결정된 사람은 입영일 30일 전까지 지원가능하며, 이 때 지원자는 입영일자&nbsp;연기 신청서를 병적지 지방병무청에 제출하여야 함</li>
+				<li>타 군에 지원하여 합격한 사람은 지원을 제한</li>
+				<li>지원서 접수취소는 기술훈련 시작 전까지 병무청 홈페이지 →&nbsp;병무민원포털 → 군지원→ 지원서 작성·수정·취소에서 접수취소 가능</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h3">
+<h3>구비서류</h3>
+
+<ul class="list">
+	<li>취업맞춤특기병 지원서 <span class="button down white2 ml10px"><a href="/cmfileDown.do?gtfile_no=154">다운로드</a><a href="/cmfileView.do?gtfile_no=154" target="_blank">미리보기</a></span></li>
+	<li>최종학교 졸업증명서 또는 최종학년 재학·수료·휴학·퇴학증명서 등 1부</li>
+	<li>훈련기관장이 발행하는 '훈련참여(수료)확인서' 1부(기술훈련을 마친 사람만 제출) <span class="button down white2 ml10px"><a href="/cmfileDown.do?gtfile_no=153">다운로드</a><a href="/cmfileView.do?gtfile_no=153" target="_blank">미리보기</a></span>
+	<ul>
+		<li>&nbsp;'훈련기관'이란, 직업전문학교·기술학원 등 국가기관 및 지방자치단체가 주관하는 공공 또는 민간위탁 기술훈련기관을 말함</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<div class="layout_h3">
+<h3>입영</h3>
+
+<ul class="list">
+	<li>기술훈련을 마친 사람은 해당 분야로 취업하거나 입영할 수 있습니다.
+	<ul>
+		<li><strong>'先취업 後입영' 하는 경우</strong></li>
+		<li>기술훈련 수료 후 6월 이내 취업한 사람은 24세까지 입영연기, 연기기간 중 입영 신청하면 입영 가능(가급적 원하는 시기 반영, 모집계획 범위 내)<br>
+		&nbsp;</li>
+		<li>미취업자는 정해진 일자에 입영(입영일은 훈련수료 다음 달부터 6월 후 3월 이내)</li>
+		<li><strong>'先입영 後취업' 하는 경우</strong></li>
+		<li>「조기입영 신청서」제출 <span class="button down white2 ml10px"><a href="/cmfileDown.do?gtfile_no=186">다운로드</a><a href="/cmfileView.do?gtfile_no=186" target="_blank">미리보기</a></span>, 기술훈련 수료일로부터 6월 내의 일자에 입영(모집계획 범위 내)</li>
+	</ul>
+	</li>
+	<li>취업맞춤특기병으로 선발되어 입영통지된 사람은 병무청 홈페이지 또는 귀하의 e-mail에서 현역병입영통지서를 출력 후 통지서를 지참하고 정해진 입영일자·부대로 입영합니다.</li>
+	<li>만일, 부득이한 사유로 선발취소를 원하는 경우에는 병무청 홈페이지 →&nbsp;병무민원포털 → 군지원→ 선발취소 및 입영연기 등 민원&nbsp;→ 선발취소 신청에서 인터넷으로 취소 신청할 수 있습니다.(필요시 관련증빙서류 제출)</li>
+	<li>부득이한 사유는 아래와 같습니다.
+	<ul>
+		<li>질병 또는 심신장애 사유로&nbsp;2주 이상의 치유기간이 필요하다고 인정되는 경우</li>
+		<li>본인의 직계 존·비속, 배우자, 형제자매 또는 세대구성원의 위독, 사망 등으로 하여 본인이 아니면 가사정리가 어렵다고 인정되는 경우</li>
+		<li>천재지변 기타 재난을 당하여 본인이 아니면 이를 처리하기 어렵다고 인정되는 경우</li>
+		<li>최종 합격자 발표일 전날까지 각 군에서 모집하는 장교, ·부사관, 병, 의무소방원, 전투경찰순경에 지원하여 수험결과를 기다리고 있거나 또는 선발시험에 합격한 경우</li>
+		<li>취업맞춤특기병 선발취소를 원하는 경우</li>
+	</ul>
+	</li>
+</ul>
+</div>
+
+<div class="layout_h3">
+<h3>복무</h3>
+
+<table class="table_row">
+	<caption>복무에 관한표이며 입영시기, 입영부대, 복무분야, 유의사항에 관한 내용을 제공</caption>
+	<colgroup>
+		<col class="width_20p">
+		<col class="width_auto">
+	</colgroup>
+	<tbody>
+		<tr>
+			<th scope="row">입영시기</th>
+			<td>1월 ~ 12월<br>
+			입영일자는 매년 수립되는 현역병 입영계획 및 개인별 기술훈련 수료시기, 취업 시기 등에 따라 다름</td>
+		</tr>
+		<tr>
+			<th scope="row">입영부대</th>
+			<td>육군훈련소(충남 논산)</td>
+		</tr>
+		<tr>
+			<th scope="row">복무분야</th>
+			<td>개인별 기술훈련 분야와 연관된 기술특기(건설·정비·기계·통신·전자 등 57개 특기)</td>
+		</tr>
+		<tr>
+			<th scope="row">유의사항</th>
+			<td>취업맞춤특기병으로 선발되어 입영한 사람 중 신체적 결함 또는 해당 특기에 대한 직무수행 능력이 저조하거나 각종 사고자 등 부대임무상 특기조정이 불가피한 경우는 최초 선발된 특기와 다른 군사특기로 재분류되어 복무하게 됩니다.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="layout_h3">
+<h3>전역후</h3>
+
+<ul class="list">
+	<li>군 복무를 마치면 고용노동부, 국가보훈부, 중소벤처기업부&nbsp;등 유관기관과 협업하여 제공하는 취업지원서비스를 받게 됩니다.</li>
+</ul>
+</div>
+	                            <!-- 컨탠츠 페이지 끝 -->
+	                        </div>"""
