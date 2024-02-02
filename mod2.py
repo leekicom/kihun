@@ -58,8 +58,8 @@ def emp1_query(t):
     results_df = pd.DataFrame.from_records(data=query_result.fetchall(), columns=cols)
     conn.close()
     return results_df
-def emp_query(q):
-    query = "select * from emp1 where 학교명='"+q+"%'"
+def emp_query(t1,q):
+    query = "select * from "+t1+" where 학교명='"+q+"'"
     conn = create_connection("mydatabase.db")
     query = conn.execute(query)
     cols = [column[0] for column in query.description]
