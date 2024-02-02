@@ -59,7 +59,7 @@ def emp1_query(t):
     conn.close()
     return results_df
 def emp_query(q):
-    query = "select * from emp1 where 학교명='계명문화대학'"
+    query = "select * from emp1 where 학교명='계명문화대학교'"
     conn = create_connection("mydatabase.db")
     query = conn.execute(query)
     cols = [column[0] for column in query.description]
