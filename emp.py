@@ -17,9 +17,9 @@ def emp_hg():
 
     result3=df3['학교명'].values
 
-    txt3=''.join(result3)
+    txt3=''.join(test1)
 
-    st.text("대분류:"+test1)
+    st.text("대분류:"+txt3)
     emp_df=mod2.emp_query('test1')
     test1=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
 
