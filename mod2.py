@@ -50,6 +50,14 @@ def code_query(q):
                 columns = cols
             )  
     return results_code  
+def emp1_query(t):
+    query = "SELECT distinct * FROM " + t
+    conn = create_connection("mydatabase.db")
+    query_result = conn.execute(query)
+    cols = [column[0] for column in query_result.description]
+    results_df = pd.DataFrame.from_records(data=query_result.fetchall(), columns=cols)
+    conn.close()
+    return results_df
 def emp_query(q):
     query = "select * from emp1 where 학교명= '"+q+"%'"
     conn = create_connection("mydatabase.db")

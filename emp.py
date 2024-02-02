@@ -9,7 +9,7 @@ from PIL import Image
 
 def emp_hg():
     st.header("취업맞춤특기병 지원가능 학과")
-    df1=mod2.gun1_query('emp1')
+    df1=mod2.emp1_query('emp1')
 
     test1=st.selectbox('학교를 선택하세요',df1['학교명'].drop_duplicates(keep='first'),0)
 
