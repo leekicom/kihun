@@ -17,8 +17,8 @@ def emp_hg():
     emp_df=mod2.emp_query('emp1',txt3)
     test2=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
     txt4=''.join(test2)
-    tt1=mod2.emp2_df('emp1',txt3,txt4)
-    st.dataframe(tt1)
+    tt1=mod2.emp2_query('emp1',txt3,txt4)
+    st.dataframe(tt1,width=600)
 page_names_to_funcs = {
     "취업맞춤특기병 지원가능 학과":emp_hg,
 }
