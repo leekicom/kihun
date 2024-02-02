@@ -59,7 +59,7 @@ def emp1_query(t):
     conn.close()
     return results_df
 def emp_query(q):
-    query = "select * from emp1 where 학교명='"+q+"'"
+    query = "select * from emp1 where 학교명='"+q+"%'"
     conn = create_connection("mydatabase.db")
     query = conn.execute(query)
     cols = [column[0] for column in query.description]
