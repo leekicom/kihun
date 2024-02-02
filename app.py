@@ -11,6 +11,7 @@ st.sidebar.markdown(''':red[Update date : 2023.12.21]''')
 root = os.path.join(os.path.dirname(__file__))
 
 dashboards = {
+    "취업맞춤특기병": os.path.join(root, "emp.py"),   
     "육군": os.path.join(root, "army1.py"),
     "해군": os.path.join(root, "navy.py"),
     "공군": os.path.join(root, "airforce.py"),
