@@ -21,7 +21,7 @@ def emp_hg():
 
     st.text("대분류:"+txt3)
     emp_df=mod2.emp_query('test1')
-    test1=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
+    test2=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
 
 page_names_to_funcs = {
     "취업맞춤특기병 지원가능 학과":emp_hg,
