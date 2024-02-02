@@ -19,8 +19,12 @@ def emp_hg():
     txt4=''.join(test2)
     tt1=mod2.emp2_query('emp1',txt3,txt4)
     st.dataframe(tt1,width=800)
+def emp_gy():
+    mod1_html=mod1.html62
+    st.markdown(mod1_html, unsafe_allow_html=True)
 page_names_to_funcs = {
     "취업맞춤특기병 지원가능 학과":emp_hg,
+    "취업맞춤특기병 모집개요":emp_gy,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
