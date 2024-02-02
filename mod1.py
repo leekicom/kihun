@@ -12177,7 +12177,44 @@ html63="""
 </div>
 	                            <!-- 컨탠츠 페이지 끝 -->
 	                        </div>"""
-html64="""<div class="layout_h3">
+html64="""<div id="contents">
+	                            <!-- 컨탠츠 페이지 시작 -->
+	                            <div class="tab_top">
+<ul>
+	<li class="on"><a href="/contents.do?mc=mma0000386">육군</a></li>
+	<li><a href="/contents.do?mc=mma0000537">해군</a></li>
+	<li><a href="/contents.do?mc=mma0000458">해병대</a></li>
+	<li class="border_right"><a href="/contents.do?mc=mma0000465">공군</a></li>
+</ul>
+</div>
+
+<div class="tab_text1">
+<ul>
+	<li><a href="/contents.do?mc=mma0000386">기술행정병</a></li>
+	<!--li><a href="/contents.do?mc=mma0000428">최전방수호병</a></li-->
+	<li class="on"><a href="/contents.do?mc=mma0000432">취업맞춤특기병</a></li>
+	<li><a href="/contents.do?mc=mma0000505">임기제부사관</a></li>
+	<li><a href="/contents.do?mc=mma0000487">전문특기병</a></li>
+	<li><a href="/contents.do?mc=mma0000522">어학병</a></li>
+	<li><a href="/contents.do?mc=mma0000525">카투사</a></li>
+	<li><a href="/contents.do?mc=mma0000531">동반입대병</a></li>
+	<!--	<li><a href="/contents.do?mc=mma0000528">동반입대병(다문화)</a></li> -->
+	<li><a href="/contents.do?mc=mma0000533">직계가족복무부대병</a></li>
+	<li><a href="/contents.do?mc=mma0000535">연고지복무병</a></li>
+</ul>
+</div>
+
+<div class="tab_01">
+<ul>
+	<li><a href="/contents.do?mc=mma0000432">모집개요</a></li>
+	<li><a href="/contents.do?mc=mma0000433">모집안내</a></li>
+	<li><a href="/conscription/recruit_service/procedure/army/C_board_text.do?mc=mma0000434&amp;gun_gbcd=1&amp;mojip_gbcd=C">군사특기임무 및 설명</a></li>
+	<li class="on"><a href="/contents.do?mc=mma0000435">지원절차</a></li>
+	<li><a href="/contents.do?mc=mma0000436">문의처</a></li>
+</ul>
+</div>
+
+<div class="layout_h3">
 <h3>모집절차</h3>
 
 <p class="indent">01. 취업맞춤특기병지원(인터넷,방문)<br>
@@ -12214,4 +12251,96 @@ html64="""<div class="layout_h3">
 <div data-hjsonver="1.0" data-jsonlen="15130">※기술훈련을 마치고 지원한 사람은 상담 및 기술훈련이 생략되므로 '취업' 또는 '입영'할 수 있습니다.</div>
 
 <p>- 기술훈련과정 : 국가기간·전략산업 직종훈련, 중소기업 친화직종훈련, 국가인적자원개발컨소시엄 채용예정자 훈련, 폴리텍 기능사양성과정 훈련,내일배움카드제 훈련 중 일부, 일학습병행제, 내일이룸학교 등 국가기관 또는 지방자치단체에서 주관하는 직업훈련 과정</p>
-</div>"""
+</div>
+
+<div class="layout_h3">
+<h3>지원 - 선발 - 입영절차</h3>
+
+<table class="table_row">
+	<caption>지원-선발-입영절차에 관한내용표이며 지원서접수, 병역설계, 적성.진로상담, 기술훈련, 입영연기/해소, 유의사항내용을 제공</caption>
+	<tbody>
+		<tr>
+			<th scope="row">01. 지원서 접수</th>
+			<td>
+			<p><strong>지원서는 연중 접수 가능하며, 인터넷(병무청 홈페이지 - 병무민원포털 - 군지원) 또는 지방병무청 군지원센터(병역진로설계지원센터)를 방문하여 접수하면 됩니다.</strong></p>
+
+			<ul class="list">
+				<li>현역병 입영일자가 결정된 사람은 입영일 30일 전까지 지원가능하며, 별도로 입영일자연기신청서를 병적지 지방병무청에 제출하여야 합니다.</li>
+				<li>지원 시 선택한 입영시기·부대·특기 등은 기술훈련분야 및 입영하는 해 입영계획에 따라 변경될 수 있음을 유의하시기 바랍니다.</li>
+				<li>지원서 접수취소는 기술훈련이 시작되기 전까지 가능합니다.
+				<ul>
+					<li>접속경로 : 병무청 홈페이지 →&nbsp;병무민원포털 → 군지원→ 지원서 작성·수정·취소</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">02. 병역설계</th>
+			<td>
+			<p><strong>지원서를 접수하고 난 뒤 지방병무청 전문상담관(응시지역 지방병무청 군지원센터, 병역진로설계지원센터)과 대면하여 상담을 받아야 합니다.</strong></p>
+
+			<p><strong>기한 내 상담이 불가한 경우는 취업맞춤특기병&nbsp;지원이 직권으로 취소됩니다.</strong></p>
+
+			<ul class="list">
+				<li>병역판정검사를 받지 아니한 사람은 현역병지원 신체검사를 받아야 합니다.</li>
+				<li>대면상담을 마친 뒤 7일 이내 '취업맞춤특기병 지원확인서'를 교부받습니다.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">03. 적성·진로 상담</th>
+			<td><strong>응시지구 지방병무청장이 발행한 '취업맞춤특기병 지원확인서'를 지참하고 고용센터를 방문하여 고용노동부&nbsp;국민취업지원제도 등 기술훈련 참여가능 여부 및 본인의 적성·진로, 훈련분야 등을 상담 받습니다.</strong></td>
+		</tr>
+		<tr>
+			<th scope="row">04. 기술훈련</th>
+			<td>
+			<ul class="list">
+				<li><strong>기술훈련이 시작된 사람은 훈련기관장으로부터 '훈련참여(수료)확인서'를 발급받아 응시지역 지방병무청에 제출하여야 합니다.</strong>
+				<ul>
+					<li>기술훈련 시작은 지원서 접수일로부터 6월 이내이어야 합니다.</li>
+				</ul>
+				</li>
+				<li><strong>기술훈련은 국가기간·전략산업 직종훈련을 중심으로 실시되며 훈련기간은 1년 이내입니다.</strong>
+				<ul>
+					<li>취업맞춤특기병 선발자는 훈련과정 등에 성실히 참여하여야 하며, 기술훈련을 성실히 참여하지 않거나 중도에 탈락되는 경우는 직권으로 선발취소됩니다.</li>
+				</ul>
+				</li>
+				<li><strong>기술훈련을 마친 사람은 해당분야로 취업하거나 입영할 수 있습니다.</strong>
+				<ul>
+					<li>훈련수료 후 6월 이내 취업한 사람은 24세까지 입영연기할 수 있습니다.</li>
+					<li>미취업자는 정해진 일자에 입영하여야 합니다.</li>
+					<li>훈련수료 후&nbsp;빠른 입영을 원하는 사람은 '조기입영신청서'를 제출합니다.(가급적 훈련수료일로 부터 6월 내 입영 가능, 모집계획 범위 내)</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">05. 입영연기/해소</th>
+			<td>
+			<ul class="list">
+				<li><strong>기술훈련을 마치고 취업한 사람은 24세까지 현역병 입영을 연기할 수 있습니다.</strong>
+				<ul>
+					<li>'재직증명서'를 첨부하여 '입영기일 연기신청서'를 제출하도록 합니다.</li>
+				</ul>
+				</li>
+				<li><strong>입영연기자 중 입영을 희망하는 사람은 '입영기일 연기해소신청서'를 제출하면 됩니다.</strong>
+				<ul>
+					<li>입영연기가 해소되면 해소일로부터 3월 이내의 일자로 입영일자가 결정됩니다.</li>
+					<li>접속경로 : 병무청 홈페이지 →&nbsp;병무민원포털 → 군지원→ 선발취소 및 입영연기 등&nbsp;- 취업맞춤특기병 입영연기(해소)신청</li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">유의사항</th>
+			<td>취업맞춤특기병 지원 시는 고졸 이하(대학 중퇴 포함) 학력이었으나 입영일자가 결정되기 전까지 대학에 진학(수학)하는 경우는 취업맞춤특기병 선발이 직권으로 취소되니 유의하시기 바랍니다.<br>
+			* 전문대 등 일부대학 진학ㆍ수학 제외</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+	                            <!-- 컨탠츠 페이지 끝 -->
+	                        </div>"""
