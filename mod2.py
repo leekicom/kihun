@@ -50,6 +50,16 @@ def code_query(q):
                 columns = cols
             )  
     return results_code  
+def emp_query(q):
+    query = "select * from emp1 where 학교명= '"+q+"%'"
+    conn = create_connection("mydatabase.db")
+    query = conn.execute(query)
+    cols = [column[0] for column in query.description]
+    results_code= pd.DataFrame.from_records(
+                data = query.fetchall(), 
+                columns = cols
+            )  
+    return results_code 
 def sogae_query(b):
     query = "select Column2 from 군사특기소개 where Column1='"+b+"'"
     conn = create_connection("mydatabase.db")
