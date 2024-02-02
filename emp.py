@@ -19,8 +19,8 @@ def emp_hg():
 
     txt3=''.join(result3)
 
-    st.text("대분류:"+txt3)
-    emp_df=mod2.emp_query('txt3')
+    st.text("대분류:"+test1)
+    emp_df=mod2.emp_query('test1')
     test1=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
 
 page_names_to_funcs = {
