@@ -16,11 +16,11 @@ def emp_hg():
     df3=df1.query("학교명=='"+test1+"'")
 
     result3=df3['학교명'].values
-    result4=df3['코드'].values
+
     txt3=''.join(result3)
-    txt4=''.join(result4)
+
     st.text("대분류:"+txt3)
-    df2=df1.query("특기=='"+txt3+"'")
+
 
 
 page_names_to_funcs = {
