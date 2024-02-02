@@ -23,8 +23,8 @@ def emp_gy():
     mod1_html=mod1.html62
     st.markdown(mod1_html, unsafe_allow_html=True)
 def emp_an():
-    mod1_html=mod1.html63
-    st.markdown(mod1_html, unsafe_allow_html=True)
+    mod1_html1=mod1.html63
+    st.markdown(mod1_html1, unsafe_allow_html=True)
 page_names_to_funcs = {
     "취업맞춤특기병 지원가능 학과":emp_hg,
     "취업맞춤특기병 모집개요":emp_gy,
