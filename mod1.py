@@ -11995,8 +11995,6 @@ html63="""
 			<td>
 			<div class="layout_h5">
 			<h3><span style="color: rgb(105, 105, 105);"><span style="font-size: 14px;">병역판정검사 결과 신체등급&nbsp;1∼4급자로서 현역병 입영대상인 사람</span></span></h3>
-			</div>
-
 			<ul class="list">
 				<li>모집특기별 신체제한 사항의 사유에 해당되지 아니한 사람
 				<ul>
