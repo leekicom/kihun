@@ -12177,44 +12177,7 @@ html63="""
 </div>
 	                            <!-- 컨탠츠 페이지 끝 -->
 	                        </div>"""
-html64="""<div id="contents">
-	                            <!-- 컨탠츠 페이지 시작 -->
-	                            <div class="tab_top">
-<ul>
-	<li class="on"><a href="/contents.do?mc=mma0000386">육군</a></li>
-	<li><a href="/contents.do?mc=mma0000537">해군</a></li>
-	<li><a href="/contents.do?mc=mma0000458">해병대</a></li>
-	<li class="border_right"><a href="/contents.do?mc=mma0000465">공군</a></li>
-</ul>
-</div>
-
-<div class="tab_text1">
-<ul>
-	<li><a href="/contents.do?mc=mma0000386">기술행정병</a></li>
-	<!--li><a href="/contents.do?mc=mma0000428">최전방수호병</a></li-->
-	<li class="on"><a href="/contents.do?mc=mma0000432">취업맞춤특기병</a></li>
-	<li><a href="/contents.do?mc=mma0000505">임기제부사관</a></li>
-	<li><a href="/contents.do?mc=mma0000487">전문특기병</a></li>
-	<li><a href="/contents.do?mc=mma0000522">어학병</a></li>
-	<li><a href="/contents.do?mc=mma0000525">카투사</a></li>
-	<li><a href="/contents.do?mc=mma0000531">동반입대병</a></li>
-	<!--	<li><a href="/contents.do?mc=mma0000528">동반입대병(다문화)</a></li> -->
-	<li><a href="/contents.do?mc=mma0000533">직계가족복무부대병</a></li>
-	<li><a href="/contents.do?mc=mma0000535">연고지복무병</a></li>
-</ul>
-</div>
-
-<div class="tab_01">
-<ul>
-	<li><a href="/contents.do?mc=mma0000432">모집개요</a></li>
-	<li><a href="/contents.do?mc=mma0000433">모집안내</a></li>
-	<li><a href="/conscription/recruit_service/procedure/army/C_board_text.do?mc=mma0000434&amp;gun_gbcd=1&amp;mojip_gbcd=C">군사특기임무 및 설명</a></li>
-	<li class="on"><a href="/contents.do?mc=mma0000435">지원절차</a></li>
-	<li><a href="/contents.do?mc=mma0000436">문의처</a></li>
-</ul>
-</div>
-
-<div class="layout_h3">
+html64="""<div class="layout_h3">
 <h3>모집절차</h3>
 
 <p class="indent">01. 취업맞춤특기병지원(인터넷,방문)<br>
