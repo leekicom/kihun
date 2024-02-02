@@ -12026,7 +12026,6 @@ html63="""
 			<td>
 			<div class="layout_h5">
 			<h3><span style="color: rgb(105, 105, 105);"><span style="font-size: 14px;">아래 사항에 해당되는 경우에는 취업맞춤특기병 선발을 제외</span></span></h3>
-
 			<ul class="list">
 				<li>정해진 기한 내 상담 및 기술훈련 등을 받지 아니한 경우
 				<ul>
