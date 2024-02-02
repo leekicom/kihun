@@ -12177,7 +12177,7 @@ html63="""
 </div>
 	                            <!-- 컨탠츠 페이지 끝 -->
 	                        </div>"""
-htmi64="""<div class="layout_h3">
+html64="""<div class="layout_h3">
 <h3>모집절차</h3>
 
 <p class="indent">01. 취업맞춤특기병지원(인터넷,방문)<br>
