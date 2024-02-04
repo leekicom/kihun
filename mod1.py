@@ -12219,6 +12219,8 @@ html64="""<div class="layout_h3">
 <div class="layout_h3">
 <h3>지원 - 선발 - 입영절차</h3>
 
+
+
 <table class="table_row">
 	<caption>지원-선발-입영절차에 관한내용표이며 지원서접수, 병역설계, 적성.진로상담, 기술훈련, 입영연기/해소, 유의사항내용을 제공</caption>
 	<tbody>
