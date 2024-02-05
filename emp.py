@@ -18,7 +18,7 @@ def emp_hg():
     test2=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
     txt4=''.join(test2)
     tt1=mod2.emp2_query('emp1',txt3,txt4)
-    st.dataframe(tt1,width=800,height=600)
+    st.dataframe(tt1,width=800)
 def emp_gy():
     mod1_html=mod1.html62
     st.markdown(mod1_html, unsafe_allow_html=True)
