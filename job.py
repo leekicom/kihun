@@ -22,7 +22,7 @@ def emp_hg():
     st.dataframe(restult1,width=800)
 
     test7=st.selectbox('유형을 선택하세요',('현실형','탐구형','예술형','사회형','진취형','관습형'))
-    df7=df1.query(""+test7+"==1")
+    df7=df1.query(""+test7+"==1 & 군별=='육군'")
     # restult7=df7['군별','특기']
     # restult7.set_index(['군별'],inplace=True)
     st.dataframe(df7,width=800)
