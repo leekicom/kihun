@@ -22,9 +22,14 @@ def emp_hg():
     st.dataframe(restult1,width=800)
 
     test7=st.selectbox('유형을 선택하세요',('현실형','탐구형','예술형','사회형','진취형','관습형'))
-    df7=df1.query(""+test7+"==1 & 군별=='육군'")
-    st.text("육군")
-    st.dataframe(df7,width=800)
+    df11=df1.query(""+test7+"==1 & 군별=='육군'")
+    st.dataframe(df11,width=800)
+    df12=df1.query(""+test7+"==1 & 군별=='해군'")
+    st.dataframe(df12,width=800)
+    df13=df1.query(""+test7+"==1 & 군별=='공군'")
+    st.dataframe(df13,width=800)
+    df14=df1.query(""+test7+"==1 & 군별=='해병'")
+    st.dataframe(df14,width=800)
 page_names_to_funcs = {
 "직업선호도 유형":emp_hg,
 }
