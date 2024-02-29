@@ -21,7 +21,7 @@ def emp_hg():
     restult1.set_index(['특기'],inplace=True)
     st.dataframe(restult1,width=800)
 
-    test7=st.selectbox('유형을 선택하세요',('현실형','탐구형','예술형','사회형','진취형','관습형'))
+    # test7=st.selectbox('유형을 선택하세요',('현실형','탐구형','예술형','사회형','진취형','관습형'))
     df7=df1.query("현실형==1")
     restult7=df7['군별','특기']
     restult7.set_index(['군별'],inplace=True)
