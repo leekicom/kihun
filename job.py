@@ -23,9 +23,9 @@ def emp_hg():
 
     # test7=st.selectbox('유형을 선택하세요',('현실형','탐구형','예술형','사회형','진취형','관습형'))
     df7=df1.query("현실형==1")
-    restult7=df7['군별','특기']
-    restult7.set_index(['군별'],inplace=True)
-    st.dataframe(restult7,width=800)
+    # restult7=df7['군별','특기']
+    # restult7.set_index(['군별'],inplace=True)
+    st.dataframe(df7,width=800)
 page_names_to_funcs = {
 "직업선호도 유형":emp_hg,
 }
