@@ -26,10 +26,13 @@ def emp_hg():
     df11.set_index(['군별'],inplace=True)
     st.dataframe(df11,width=800)
     df12=df1.query(""+test7+"==1 & 군별=='해군'")
+    df12.set_index(['군별'],inplace=True)
     st.dataframe(df12,width=800)
     df13=df1.query(""+test7+"==1 & 군별=='공군'")
+    df13.set_index(['군별'],inplace=True)    
     st.dataframe(df13,width=800)
     df14=df1.query(""+test7+"==1 & 군별=='해병'")
+    df14.set_index(['군별'],inplace=True)
     st.dataframe(df14,width=800)
 page_names_to_funcs = {
 "직업선호도 유형":emp_hg,
