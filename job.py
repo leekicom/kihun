@@ -9,27 +9,30 @@ from PIL import Image
 
 def emp_hg():
     st.header("직업선호도 유형")
-    df1=mod2.emp1_query('emp1')
-    test1=st.selectbox('학교를 선택하세요',df1['학교명'].drop_duplicates(keep='first'),0)
-    txt3=''.join(test1)
-
-    st.text("학교명:"+test1)
-    emp_df=mod2.emp_query('emp1',txt3)
-    test2=st.selectbox('학과를 선택하세요',emp_df['학과명'].drop_duplicates(keep='first'),0)
-    txt4=''.join(test2)
-    tt1=mod2.emp2_query('emp1',txt3,txt4)
-    st.dataframe(tt1,width=800)
-def emp_gy():
-    mod1_html=mod1.html62
-    st.markdown(mod1_html, unsafe_allow_html=True)
-def emp_an():
-    mod1_html1=mod1.html63
-    st.markdown(mod1_html1, unsafe_allow_html=True)
-def emp_jw():
-    mod1_html2=mod1.html64
-    st.markdown(mod1_html2, unsafe_allow_html=True)
+    df1=mod2.emp1_query('직업선호도')
+    col1, col2 = st.columns(2) 
+    with col1:
+        test1=st.selectbox('군을 선택하세요',df1['군별'].drop_duplicates(keep='first'),0)
+    with col2:    
+        test2=st.selectbox('특기를 선택하세요',df1['특기'].drop_duplicates(keep="first"),0)
+    df2=df1.query("군별=='"+test1+"' & 특기=='"+test2+"' ")
+    # restult1=df2[['특기','현실형','탐구형','예술형','사회형','진취형','관습형']]
+    st.dataframe(df2)
+ 
+    # df1=gun_query()
+    # col1, col2 = st.columns(2) 
+    # with col1:
+    #     test1=st.selectbox('군사특기를 선택하세요',df1['군사특기명'].drop_duplicates(keep='first'),0)
+    # with col2:
+    #     test2=st.selectbox('입영부대를 선택하세요',df1['입영부대'].drop_duplicates(keep="first"),0)
+    # df2=df1.query("군사특기명=='"+test1+"' & 입영부대=='"+test2+"' ")
+    # restult1=df2[['입영월','접수인원','지원인원','커트라인']]
+    # restult2=restult1.melt('입영월', var_name='구분', value_name='인원/점수')
+    # restult1.set_index(['입영월'],inplace=True)
+    # rst1=restult1.transpose()
+    # st.dataframe(rst1)
 page_names_to_funcs = {
-    "직업선호도 유형":emp_hg,
+"직업선호도 유형":emp_hg,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
