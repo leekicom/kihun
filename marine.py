@@ -299,7 +299,7 @@ def marine_gunsa():
     txt3=''.join(test1)
     txt1=mod2.gstg1('자격면허','해병','직접',txt3)
     #t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기'].drop_duplicates(keep='first'),0)
-    st.text(txt1[['군사특기']])
+    st.dataframe(txt1)
     st.header("해병대 군사특기 추천(전공)")
     df2=mod2.gun1_query("전공")    
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
