@@ -384,15 +384,15 @@ def susong():
     st.header("수송운용(차량운전) 입영부대별 현황")
     st.altair_chart(c.interactive(),
         use_container_width=True)
-    st.text('1사단 : 경기 파주시 문산읍 이천리 516(사임당로 492)  ')
-    df_int=df1[df1['입영부대']=="1사단"]
-    if st.button('열기(1사단)'):
-        df_1=st.dataframe(df_int, width=640)
+    # st.text('1사단 : 경기 파주시 문산읍 이천리 516(사임당로 492)  ')
+    # df_int=df1[df1['입영부대']=="1사단"]
+    # if st.button('열기(1사단)'):
+    #     df_1=st.dataframe(df_int, width=640)
 
-    st.text('25사단 : 경기도 양주시 남면 매곡리 216-3(휴암로 393-43)')
-    df_int=df1[df1['입영부대']=="25사단"]
-    if st.button('열기(25사단)'):
-        df_1=st.dataframe(df_int, width=640)
+    # st.text('25사단 : 경기도 양주시 남면 매곡리 216-3(휴암로 393-43)')
+    # df_int=df1[df1['입영부대']=="25사단"]
+    # if st.button('열기(25사단)'):
+    #     df_1=st.dataframe(df_int, width=640)
 
     st.text('28사단 : 경기도 파주시 적성면 적암리 194-8(율곡로 3064)')
     df_int=df1[df1['입영부대']=="28사단"]
@@ -424,10 +424,10 @@ def susong():
     if st.button('열기(6사단)'):
         df_1=st.dataframe(df_int, width=640)
 
-    st.text('9사단 : 경기도 고양시 일산동구 성석동 612')
-    df_int=df1[df1['입영부대']=="9사단"]
-    if st.button('열기(9사단)'):
-        df_1=st.dataframe(df_int, width=640)
+    # st.text('9사단 : 경기도 고양시 일산동구 성석동 612')
+    # df_int=df1[df1['입영부대']=="9사단"]
+    # if st.button('열기(9사단)'):
+    #     df_1=st.dataframe(df_int, width=640)
 
     st.text('육군훈련소 : 충남 논산시 연무읍 득안대로')
     df_int=df1[df1['입영부대']=="육군훈련소"]
