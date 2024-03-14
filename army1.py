@@ -469,7 +469,7 @@ def army_hh():
     st.image(image, caption=txt2)
     st.markdown(mod2_html, unsafe_allow_html=True)
 def army_gunsa():
-    st.header("육군 군사특기 추천")
+    st.header("육군 군사특기 추천(자격면허)")
     txt5=''
     txt6=''
     df1=gun1_query("자격면허")    
@@ -482,7 +482,7 @@ def army_gunsa():
         t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기명'].drop_duplicates(keep='first'),0)
     with col2:
         t_2=st.selectbox('간접관련 군사특기입니다.',txt2['군사특기명'].drop_duplicates(keep='first'),0)
-
+    st.header("육군 군사특기 추천(전공)")
     df2=gun1_query("전공")    
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
     st.text(test2)

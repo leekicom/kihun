@@ -310,7 +310,7 @@ def navy_jeomsu2(txt3,txt4,df2):
 
                     st.markdown(f":blue[{txt3}]")    
 def navy_gunsa():
-    st.header("해군 군사특기 추천")
+    st.header("해군 군사특기 추천(자격면허)")
     txt5=''
     df1=mod2.gun1_query("자격면허")    
     test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
@@ -318,7 +318,7 @@ def navy_gunsa():
     txt1=mod2.gstg1('자격면허','해군','직접',txt3)
     st.text(txt1[['군사특기']])
 
-
+   st.header("해군 군사특기 추천(전공)")
     df2=mod2.gun1_query("전공")    
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
 

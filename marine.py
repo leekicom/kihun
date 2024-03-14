@@ -292,7 +292,7 @@ def marine_jeomsu2(txt3,txt4,df2):
                     mod1_html=mod1.html20
                     image5=st.markdown(mod1_html, unsafe_allow_html=True)
 def marine_gunsa():
-    st.header("해병대 군사특기 추천")
+    st.header("해병대 군사특기 추천(자격면허)")
     txt5=''
     df1=mod2.gun1_query("자격면허")    
     test1=st.selectbox('자격면허를 선택하세요',df1['검사지침코드명'].drop_duplicates(keep='first'),0)
@@ -300,7 +300,7 @@ def marine_gunsa():
     txt1=mod2.gstg1('자격면허','해병','직접',txt3)
     #t_1=st.selectbox('직접관련 군사특기입니다.',txt1['군사특기'].drop_duplicates(keep='first'),0)
     st.text(txt1[['군사특기']])
-
+    st.header("해병대 군사특기 추천(전공)")
     df2=mod2.gun1_query("전공")    
     test2=st.selectbox('전공을 선택하세요',df2['검사지침코드명'].drop_duplicates(keep='first'),0)
 
