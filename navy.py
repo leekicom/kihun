@@ -9,7 +9,7 @@ from PIL import Image
 
 def navy_hh():
     st.header("해군 군사특기별 현황")
-    df1=mod2.gun1_query('해군특기별현황')
+    df1=mod2.gun2_query('해군특기별현황')
     code_df=mod2.code_query('N')
     test1=st.selectbox('군사특기를 선택하세요',code_df['소분류'].drop_duplicates(keep='first'),0)
 
