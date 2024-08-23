@@ -20,7 +20,7 @@ def gun1_query(t):
     conn.close()
     return results_df
 def gun2_query(t):
-    query = "SELECT * FROM " + t + "order by 입영월 DESC"
+    query = "SELECT * FROM " + t + " order by 입영월 DESC"
     conn = create_connection("mydatabase.db")
     query_result = conn.execute(query)
     cols = [column[0] for column in query_result.description]
