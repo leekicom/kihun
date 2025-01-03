@@ -7,7 +7,7 @@ st.set_page_config(
   page_title="대구병역진로설계지원센터",
 )
 st.sidebar.header(''':blue[한눈에 보는 모집병 지원정보]''')
-st.sidebar.markdown(''':red[Update date : 2024.3.14]''')
+st.sidebar.markdown(''':red[Update date : 2025.1.3]''')
 root = os.path.join(os.path.dirname(__file__))
 
 dashboards = {

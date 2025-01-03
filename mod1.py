@@ -1082,7 +1082,7 @@ html21="""<div class="layout_h3">
 &nbsp;<strong><span style="color: rgb(0, 0, 255);"><span style="font-size: 14px;">&lt;기타 가산점&gt; - 수색 계열 제외</span></span></strong><br>
 <span style="font-size: 14px;">&nbsp;&nbsp; - 무도 유단자 : 3단 이상 5점/ 1~2단 2점</span><br>
 <span style="font-size: 14px;">&nbsp;&nbsp; -&nbsp;수상인명구조 자격증 소지자 : 2점<br>
-&nbsp;&nbsp; - 공인회계사 자격증 소지자 : 10점</span>
+&nbsp;&nbsp; - 공인회계사 자격증 소지자 : 삭제(2025년)</span>
 
 <div>&lt;기타 가산점&gt; - 수색계열<br>
 &nbsp;&nbsp; - 스키강사 자격증 소지자 : 10점<br>
