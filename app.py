@@ -22,7 +22,8 @@ dashboards = {
     "테스트": os.path.join(root, "test.py")
 }
 
-choice_from_url = query_params = st.experimental_get_query_params().get("육군", ["육군"])[0]
+#choice_from_url = query_params = st.experimental_get_query_params().get("육군", ["육군"])[0]
+choice_from_url = query_params = st.query_params().get("육군", ["육군"])[0]
 index = list(dashboards.keys()).index(choice_from_url)
 
 choice = st.sidebar.radio("항목을 선택하세요!", list(dashboards.keys()), index=index)
